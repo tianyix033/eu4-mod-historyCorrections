@@ -175,8 +175,8 @@ categories =  {
 		supply_limit = 5
 		
 		terrain_override = {
-			508 509 511 515 525 527 530 545 550 554 557 1947 2036 
-			2037 2040 2043 2056 2058 2069 2070 2071 2080 2090 2092 2097
+			511 515 525 527 530 545 550 554 557 1947 2036 		#@ 508 509 moved to mountain
+			2037 2040 2043 2056 2058 2069 2080 2090 2092 2097		#@ 2070 2071 moved to mountain
 			
 			105 106 107 111 1774 1844 1746 4739
 			
@@ -370,6 +370,7 @@ categories =  {
 			
 			#1.37
 			2838 #tarija
+			508 509 2070 2071	#@ Kashmir, Kangra, Chaubisi Rajya, Limbuwan - were hills
 		}
 	}
 
