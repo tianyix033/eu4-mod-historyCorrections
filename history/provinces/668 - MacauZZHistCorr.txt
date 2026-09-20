@@ -1,0 +1,7 @@
+# HistoryCorrections - province development rebalance
+# 668 - Macau  [MNG]  trade good: fish
+# vanilla 3/3/1 (dev 7)  ->  5/4/3 (dev 12)
+
+base_tax = 5
+base_production = 4
+base_manpower = 3

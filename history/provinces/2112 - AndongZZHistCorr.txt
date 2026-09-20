@@ -1,0 +1,7 @@
+# HistoryCorrections - province development rebalance
+# 2112 - Andong  [MNG]  trade good: grain
+# vanilla 2/2/1 (dev 5)  ->  3/3/1 (dev 7)
+
+base_tax = 3
+base_production = 3
+base_manpower = 1

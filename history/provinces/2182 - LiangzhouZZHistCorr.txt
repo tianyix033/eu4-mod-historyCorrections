@@ -1,0 +1,7 @@
+# HistoryCorrections - province development rebalance
+# 2182 - Liangzhou  [MNG]  trade good: livestock
+# vanilla 3/3/2 (dev 8)  ->  3/3/4 (dev 10)
+
+base_tax = 3
+base_production = 3
+base_manpower = 4

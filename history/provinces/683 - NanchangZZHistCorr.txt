@@ -1,0 +1,7 @@
+# HistoryCorrections - province development rebalance
+# 683 - Nanchang  [MNG]  trade good: paper
+# vanilla 6/6/3 (dev 15)  ->  9/10/7 (dev 26)
+
+base_tax = 9
+base_production = 10
+base_manpower = 7

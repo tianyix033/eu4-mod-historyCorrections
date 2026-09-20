@@ -1,0 +1,7 @@
+# HistoryCorrections - province development rebalance
+# 671 - Changsha  [MNG]  trade good: grain
+# vanilla 6/6/4 (dev 16)  ->  10/8/10 (dev 28)
+
+base_tax = 10
+base_production = 8
+base_manpower = 10

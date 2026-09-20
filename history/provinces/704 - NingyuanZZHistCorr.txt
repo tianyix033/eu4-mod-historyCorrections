@@ -1,0 +1,13 @@
+# HistoryCorrections - province development rebalance
+# 704 - Ningyuan  [MNG]  trade good: grain
+# vanilla 2/2/2 (dev 6)  ->  3/3/2 (dev 8)
+
+base_tax = 3
+base_production = 3
+base_manpower = 2
+
+# vanilla changes these later; rescaled so the correction is not undone
+1500.1.1 = {
+	base_tax = 14		# vanilla 9
+	base_production = 14		# vanilla 9
+}

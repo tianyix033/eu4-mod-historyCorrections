@@ -1,0 +1,7 @@
+# HistoryCorrections - province development rebalance
+# 2145 - Zhenjiang  [MNG]  trade good: naval_supplies
+# vanilla 5/5/2 (dev 12)  ->  9/7/5 (dev 21)
+
+base_tax = 9
+base_production = 7
+base_manpower = 5

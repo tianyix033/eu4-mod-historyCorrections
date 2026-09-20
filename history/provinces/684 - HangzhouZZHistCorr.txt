@@ -1,0 +1,7 @@
+# HistoryCorrections - province development rebalance
+# 684 - Hangzhou  [MNG]  trade good: silk
+# vanilla 12/12/3 (dev 27)  ->  18/19/10 (dev 47)
+
+base_tax = 18
+base_production = 19
+base_manpower = 10

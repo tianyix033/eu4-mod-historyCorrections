@@ -1,0 +1,7 @@
+# HistoryCorrections - province development rebalance
+# 2151 - Poyang  [MNG]  trade good: chinaware
+# vanilla 3/3/2 (dev 8)  ->  4/5/5 (dev 14)
+
+base_tax = 4
+base_production = 5
+base_manpower = 5

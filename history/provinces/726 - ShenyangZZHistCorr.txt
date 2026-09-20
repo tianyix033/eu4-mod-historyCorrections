@@ -1,0 +1,7 @@
+# HistoryCorrections - province development rebalance
+# 726 - Shenyang  [MNG]  trade good: gems
+# vanilla 5/5/2 (dev 12)  ->  7/8/2 (dev 17)
+
+base_tax = 7
+base_production = 8
+base_manpower = 2

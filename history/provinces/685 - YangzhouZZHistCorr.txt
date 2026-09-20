@@ -1,0 +1,7 @@
+# HistoryCorrections - province development rebalance
+# 685 - Yangzhou  [MNG]  trade good: salt
+# vanilla 12/12/2 (dev 26)  ->  17/18/10 (dev 45)
+
+base_tax = 17
+base_production = 18
+base_manpower = 10

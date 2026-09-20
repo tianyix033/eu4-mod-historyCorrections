@@ -1,0 +1,7 @@
+# HistoryCorrections - province development rebalance
+# 2171 - Xiangyang  [MNG]  trade good: gems
+# vanilla 4/4/3 (dev 11)  ->  6/6/7 (dev 19)
+
+base_tax = 6
+base_production = 6
+base_manpower = 7

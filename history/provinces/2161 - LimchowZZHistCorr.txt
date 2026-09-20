@@ -1,0 +1,7 @@
+# HistoryCorrections - province development rebalance
+# 2161 - Limchow  [MNG]  trade good: incense
+# vanilla 3/2/2 (dev 7)  ->  4/3/5 (dev 12)
+
+base_tax = 4
+base_production = 3
+base_manpower = 5

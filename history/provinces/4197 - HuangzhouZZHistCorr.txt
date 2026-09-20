@@ -1,0 +1,7 @@
+# HistoryCorrections - province development rebalance
+# 4197 - Huangzhou  [MNG]  trade good: grain
+# vanilla 2/2/1 (dev 5)  ->  3/3/2 (dev 8)
+
+base_tax = 3
+base_production = 3
+base_manpower = 2

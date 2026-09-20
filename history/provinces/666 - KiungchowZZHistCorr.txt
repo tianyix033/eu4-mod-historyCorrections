@@ -1,0 +1,7 @@
+# HistoryCorrections - province development rebalance
+# 666 - Kiungchow  [MNG]  trade good: tropical_wood
+# vanilla 1/1/1 (dev 3)  ->  2/1/2 (dev 5)
+
+base_tax = 2
+base_production = 1
+base_manpower = 2

@@ -1,0 +1,7 @@
+# HistoryCorrections - province development rebalance
+# 695 - Hejian  [MNG]  trade good: salt
+# vanilla 3/3/2 (dev 8)  ->  3/3/4 (dev 10)
+
+base_tax = 3
+base_production = 3
+base_manpower = 4

@@ -1,0 +1,7 @@
+# HistoryCorrections - province development rebalance
+# 2174 - Hengyang  [MNG]  trade good: gold
+# vanilla 3/3/3 (dev 9)  ->  4/4/7 (dev 15)
+
+base_tax = 4
+base_production = 4
+base_manpower = 7

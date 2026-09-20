@@ -1,0 +1,7 @@
+# HistoryCorrections - province development rebalance
+# 1840 - Guilin  [MNG]  trade good: silk
+# vanilla 2/2/2 (dev 6)  ->  3/3/4 (dev 10)
+
+base_tax = 3
+base_production = 3
+base_manpower = 4

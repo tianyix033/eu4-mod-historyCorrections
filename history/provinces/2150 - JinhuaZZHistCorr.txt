@@ -1,0 +1,7 @@
+# HistoryCorrections - province development rebalance
+# 2150 - Jinhua  [MNG]  trade good: grain
+# vanilla 3/3/2 (dev 8)  ->  5/4/5 (dev 14)
+
+base_tax = 5
+base_production = 4
+base_manpower = 5

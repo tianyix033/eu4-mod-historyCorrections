@@ -1,0 +1,7 @@
+# HistoryCorrections - province development rebalance
+# 2178 - Lu'an  [MNG]  trade good: iron
+# vanilla 3/2/2 (dev 7)  ->  3/2/3 (dev 8)
+
+base_tax = 3
+base_production = 2
+base_manpower = 3

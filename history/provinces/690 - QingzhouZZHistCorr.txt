@@ -1,0 +1,7 @@
+# HistoryCorrections - province development rebalance
+# 690 - Qingzhou  [MNG]  trade good: iron
+# vanilla 5/4/3 (dev 12)  ->  5/4/5 (dev 14)
+
+base_tax = 5
+base_production = 4
+base_manpower = 5

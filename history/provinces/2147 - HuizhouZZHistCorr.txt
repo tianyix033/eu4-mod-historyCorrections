@@ -1,0 +1,7 @@
+# HistoryCorrections - province development rebalance
+# 2147 - Huizhou  [MNG]  trade good: paper
+# vanilla 5/4/3 (dev 12)  ->  7/7/7 (dev 21)
+
+base_tax = 7
+base_production = 7
+base_manpower = 7

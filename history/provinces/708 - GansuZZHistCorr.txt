@@ -1,0 +1,7 @@
+# HistoryCorrections - province development rebalance
+# 708 - Gansu  [MNG]  trade good: livestock
+# vanilla 3/3/1 (dev 7)  ->  3/3/2 (dev 8)
+
+base_tax = 3
+base_production = 3
+base_manpower = 2

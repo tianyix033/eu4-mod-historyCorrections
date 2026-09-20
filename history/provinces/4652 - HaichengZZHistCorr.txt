@@ -1,0 +1,7 @@
+# HistoryCorrections - province development rebalance
+# 4652 - Haicheng  [MNG]  trade good: fish
+# vanilla 2/2/2 (dev 6)  ->  3/3/2 (dev 8)
+
+base_tax = 3
+base_production = 3
+base_manpower = 2

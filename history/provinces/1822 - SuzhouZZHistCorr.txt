@@ -1,0 +1,7 @@
+# HistoryCorrections - province development rebalance
+# 1822 - Suzhou  [MNG]  trade good: silk
+# vanilla 9/9/2 (dev 20)  ->  13/14/8 (dev 35)
+
+base_tax = 13
+base_production = 14
+base_manpower = 8

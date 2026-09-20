@@ -1,0 +1,7 @@
+# HistoryCorrections - province development rebalance
+# 697 - Datong  [MNG]  trade good: iron
+# vanilla 4/4/3 (dev 11)  ->  4/4/5 (dev 13)
+
+base_tax = 4
+base_production = 4
+base_manpower = 5

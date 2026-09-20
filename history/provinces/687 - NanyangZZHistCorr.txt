@@ -1,0 +1,7 @@
+# HistoryCorrections - province development rebalance
+# 687 - Nanyang  [MNG]  trade good: gems
+# vanilla 4/4/2 (dev 10)  ->  4/4/4 (dev 12)
+
+base_tax = 4
+base_production = 4
+base_manpower = 4

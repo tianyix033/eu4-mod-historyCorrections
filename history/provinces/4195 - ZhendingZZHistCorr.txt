@@ -1,0 +1,7 @@
+# HistoryCorrections - province development rebalance
+# 4195 - Zhending  [MNG]  trade good: grain
+# vanilla 2/2/2 (dev 6)  ->  2/2/3 (dev 7)
+
+base_tax = 2
+base_production = 2
+base_manpower = 3

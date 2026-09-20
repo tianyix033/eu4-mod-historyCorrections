@@ -1,0 +1,7 @@
+# HistoryCorrections - province development rebalance
+# 682 - Wuchang  [MNG]  trade good: salt
+# vanilla 8/8/3 (dev 19)  ->  13/13/7 (dev 33)
+
+base_tax = 13
+base_production = 13
+base_manpower = 7

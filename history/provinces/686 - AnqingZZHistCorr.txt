@@ -1,0 +1,7 @@
+# HistoryCorrections - province development rebalance
+# 686 - Anqing  [MNG]  trade good: cloth
+# vanilla 6/6/2 (dev 14)  ->  9/10/5 (dev 24)
+
+base_tax = 9
+base_production = 10
+base_manpower = 5

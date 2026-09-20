@@ -1,0 +1,7 @@
+# HistoryCorrections - province development rebalance
+# 696 - Baoding  [MNG]  trade good: chinaware
+# vanilla 3/3/2 (dev 8)  ->  3/4/3 (dev 10)
+
+base_tax = 3
+base_production = 4
+base_manpower = 3

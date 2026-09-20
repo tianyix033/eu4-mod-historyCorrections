@@ -1,0 +1,7 @@
+# HistoryCorrections - province development rebalance
+# 1816 - Beijing  [MNG]  trade good: grain
+# vanilla 13/13/5 (dev 31)  ->  18/19/13 (dev 50)
+
+base_tax = 18
+base_production = 19
+base_manpower = 13

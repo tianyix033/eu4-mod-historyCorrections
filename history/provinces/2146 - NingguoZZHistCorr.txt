@@ -1,0 +1,7 @@
+# HistoryCorrections - province development rebalance
+# 2146 - Ningguo  [MNG]  trade good: paper
+# vanilla 3/3/3 (dev 9)  ->  4/5/6 (dev 15)
+
+base_tax = 4
+base_production = 5
+base_manpower = 6

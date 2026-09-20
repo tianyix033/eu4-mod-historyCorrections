@@ -1,0 +1,7 @@
+# HistoryCorrections - province development rebalance
+# 670 - Ganzhou  [MNG]  trade good: grain
+# vanilla 4/4/2 (dev 10)  ->  6/6/5 (dev 17)
+
+base_tax = 6
+base_production = 6
+base_manpower = 5

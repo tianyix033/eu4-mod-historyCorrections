@@ -1,0 +1,7 @@
+# HistoryCorrections - province development rebalance
+# 1821 - Nanjing  [MNG]  trade good: silk
+# vanilla 15/15/3 (dev 33)  ->  22/22/13 (dev 57)
+
+base_tax = 22
+base_production = 22
+base_manpower = 13

@@ -1,0 +1,7 @@
+# HistoryCorrections - province development rebalance
+# 2176 - Shangqiu  [MNG]  trade good: cloth
+# vanilla 5/5/2 (dev 12)  ->  5/6/3 (dev 14)
+
+base_tax = 5
+base_production = 6
+base_manpower = 3

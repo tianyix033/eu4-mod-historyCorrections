@@ -1,0 +1,7 @@
+# HistoryCorrections - province development rebalance
+# 688 - Kaifeng  [MNG]  trade good: chinaware
+# vanilla 8/8/4 (dev 20)  ->  8/10/6 (dev 24)
+
+base_tax = 8
+base_production = 10
+base_manpower = 6

@@ -1,0 +1,7 @@
+# HistoryCorrections - province development rebalance
+# 2157 - Waichow  [MNG]  trade good: grain
+# vanilla 7/7/3 (dev 17)  ->  11/10/8 (dev 29)
+
+base_tax = 11
+base_production = 10
+base_manpower = 8
