@@ -1,0 +1,7 @@
+# HistoryCorrections - province development rebalance
+# 131 - Zagorje  [CRO]  trade good: cloth
+# vanilla 3/3/1 (dev 7)  ->  2/2/1 (dev 5)
+
+base_tax = 2
+base_production = 2
+base_manpower = 1

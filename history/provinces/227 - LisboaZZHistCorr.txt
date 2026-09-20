@@ -1,0 +1,7 @@
+# HistoryCorrections - province development rebalance
+# 227 - Lisboa  [POR]  trade good: fish
+# vanilla 6/7/3 (dev 16)  ->  4/5/2 (dev 11)
+
+base_tax = 4
+base_production = 5
+base_manpower = 2

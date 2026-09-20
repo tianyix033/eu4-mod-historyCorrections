@@ -1,0 +1,21 @@
+# HistoryCorrections - province development rebalance
+# 183 - Ile-de-France  [FRA]  trade good: paper
+# vanilla 8/8/7 (dev 23)  ->  6/7/6 (dev 19)
+
+base_tax = 6
+base_production = 7
+base_manpower = 6
+
+# vanilla changes these later; rescaled so the correction is not undone
+1589.1.1 = {
+	base_tax = 10		# vanilla 14
+	base_production = 12		# vanilla 14
+}
+1621.1.1 = {
+	base_tax = 11		# vanilla 15
+	base_production = 13		# vanilla 15
+}
+1773.1.1 = {
+	base_tax = 12		# vanilla 16
+	base_production = 14		# vanilla 16
+}

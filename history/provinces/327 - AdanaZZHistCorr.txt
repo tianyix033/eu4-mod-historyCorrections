@@ -1,0 +1,13 @@
+# HistoryCorrections - province development rebalance
+# 327 - Adana  [RAM]  trade good: cotton
+# vanilla 3/3/4 (dev 10)  ->  2/2/3 (dev 7)
+
+base_tax = 2
+base_production = 2
+base_manpower = 3
+
+# vanilla changes these later; rescaled so the correction is not undone
+1740.1.1 = {
+	base_tax = 1		# vanilla 1
+	base_production = 1		# vanilla 1
+}

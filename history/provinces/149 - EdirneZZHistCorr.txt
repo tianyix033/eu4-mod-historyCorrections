@@ -1,0 +1,17 @@
+# HistoryCorrections - province development rebalance
+# 149 - Edirne  [TUR]  trade good: cloth
+# vanilla 6/5/3 (dev 14)  ->  4/4/2 (dev 10)
+
+base_tax = 4
+base_production = 4
+base_manpower = 2
+
+# vanilla changes these later; rescaled so the correction is not undone
+1615.1.1 = {
+	base_tax = 3		# vanilla 4
+	base_production = 3		# vanilla 4
+}
+1718.1.1 = {
+	base_tax = 4		# vanilla 6
+	base_production = 5		# vanilla 6
+}

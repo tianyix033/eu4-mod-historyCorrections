@@ -1,0 +1,7 @@
+# HistoryCorrections - province development rebalance
+# 1774 - Treviso  [VEN]  trade good: paper
+# vanilla 7/7/4 (dev 18)  ->  7/6/3 (dev 16)
+
+base_tax = 7
+base_production = 6
+base_manpower = 3

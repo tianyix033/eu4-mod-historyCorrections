@@ -1,0 +1,13 @@
+# HistoryCorrections - province development rebalance
+# 77 - Heidelberg  [PAL]  trade good: wine
+# vanilla 5/4/4 (dev 13)  ->  4/3/2 (dev 9)
+
+base_tax = 4
+base_production = 3
+base_manpower = 2
+
+# vanilla changes these later; rescaled so the correction is not undone
+1689.8.1 = {
+	base_tax = 4		# vanilla 5
+	base_production = 4		# vanilla 5
+}

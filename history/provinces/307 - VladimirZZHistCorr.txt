@@ -1,0 +1,17 @@
+# HistoryCorrections - province development rebalance
+# 307 - Vladimir  [MOS]  trade good: iron
+# vanilla 4/4/3 (dev 11)  ->  2/4/2 (dev 8)
+
+base_tax = 2
+base_production = 4
+base_manpower = 2
+
+# vanilla changes these later; rescaled so the correction is not undone
+1711.1.1 = {
+	base_tax = 2		# vanilla 4
+	base_production = 4		# vanilla 4
+}
+1767.1.1 = {
+	base_tax = 2		# vanilla 5
+	base_production = 5		# vanilla 5
+}

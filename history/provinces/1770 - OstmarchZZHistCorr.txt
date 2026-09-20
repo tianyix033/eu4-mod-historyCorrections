@@ -1,0 +1,18 @@
+# HistoryCorrections - province development rebalance
+# 1770 - Ostmarch  [HAB]  trade good: wine
+# vanilla 3/3/4 (dev 10)  ->  2/3/2 (dev 7)
+
+base_tax = 2
+base_production = 3
+base_manpower = 2
+
+# vanilla changes these later; rescaled so the correction is not undone
+1545.1.1 = {
+	base_manpower = 2		# vanilla 3
+}
+1650.1.1 = {
+	base_manpower = 2		# vanilla 4
+}
+1700.1.1 = {
+	base_manpower = 3		# vanilla 6
+}

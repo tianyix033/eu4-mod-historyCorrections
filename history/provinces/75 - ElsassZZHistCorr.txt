@@ -1,0 +1,13 @@
+# HistoryCorrections - province development rebalance
+# 75 - Elsass  [ALS]  trade good: paper
+# vanilla 6/6/4 (dev 16)  ->  4/5/2 (dev 11)
+
+base_tax = 4
+base_production = 5
+base_manpower = 2
+
+# vanilla changes these later; rescaled so the correction is not undone
+1749.1.1 = {
+	base_tax = 4		# vanilla 6
+	base_production = 5		# vanilla 6
+}

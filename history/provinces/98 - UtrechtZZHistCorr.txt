@@ -1,0 +1,13 @@
+# HistoryCorrections - province development rebalance
+# 98 - Utrecht  [UTR]  trade good: cloth
+# vanilla 5/5/2 (dev 12)  ->  4/3/1 (dev 8)
+
+base_tax = 4
+base_production = 3
+base_manpower = 1
+
+# vanilla changes these later; rescaled so the correction is not undone
+1681.1.1 = {
+	base_tax = 8		# vanilla 10
+	base_production = 6		# vanilla 10
+}

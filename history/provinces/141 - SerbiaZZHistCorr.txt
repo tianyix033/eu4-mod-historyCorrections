@@ -1,0 +1,7 @@
+# HistoryCorrections - province development rebalance
+# 141 - Serbia  [SER]  trade good: grain
+# vanilla 3/3/2 (dev 8)  ->  2/3/1 (dev 6)
+
+base_tax = 2
+base_production = 3
+base_manpower = 1

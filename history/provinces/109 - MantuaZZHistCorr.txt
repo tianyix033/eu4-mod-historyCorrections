@@ -1,0 +1,7 @@
+# HistoryCorrections - province development rebalance
+# 109 - Mantua  [MAN]  trade good: livestock
+# vanilla 8/8/3 (dev 19)  ->  8/6/3 (dev 17)
+
+base_tax = 8
+base_production = 6
+base_manpower = 3

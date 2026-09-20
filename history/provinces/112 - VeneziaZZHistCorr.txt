@@ -1,0 +1,7 @@
+# HistoryCorrections - province development rebalance
+# 112 - Venezia  [VEN]  trade good: glass
+# vanilla 10/12/5 (dev 27)  ->  10/12/3 (dev 25)
+
+base_tax = 10
+base_production = 12
+base_manpower = 3

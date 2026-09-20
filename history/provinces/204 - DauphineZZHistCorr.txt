@@ -1,0 +1,7 @@
+# HistoryCorrections - province development rebalance
+# 204 - Dauphine  [FRA]  trade good: wool
+# vanilla 4/3/3 (dev 10)  ->  3/3/2 (dev 8)
+
+base_tax = 3
+base_production = 3
+base_manpower = 2

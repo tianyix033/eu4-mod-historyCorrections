@@ -1,0 +1,13 @@
+# HistoryCorrections - province development rebalance
+# 180 - Poitou  [FRA]  trade good: livestock
+# vanilla 4/4/4 (dev 12)  ->  3/3/4 (dev 10)
+
+base_tax = 3
+base_production = 3
+base_manpower = 4
+
+# vanilla changes these later; rescaled so the correction is not undone
+1749.1.1 = {
+	base_tax = 4		# vanilla 6
+	base_production = 4		# vanilla 6
+}

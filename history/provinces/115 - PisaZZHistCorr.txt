@@ -1,0 +1,7 @@
+# HistoryCorrections - province development rebalance
+# 115 - Pisa  [PIS]  trade good: wine
+# vanilla 6/6/3 (dev 15)  ->  6/6/2 (dev 14)
+
+base_tax = 6
+base_production = 6
+base_manpower = 2

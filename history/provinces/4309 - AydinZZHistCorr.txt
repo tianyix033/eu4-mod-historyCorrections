@@ -1,0 +1,13 @@
+# HistoryCorrections - province development rebalance
+# 4309 - Aydin  [AYD]  trade good: salt
+# vanilla 2/2/2 (dev 6)  ->  1/2/1 (dev 4)
+
+base_tax = 1
+base_production = 2
+base_manpower = 1
+
+# vanilla changes these later; rescaled so the correction is not undone
+1615.1.1 = {
+	base_tax = 1		# vanilla 2
+	base_production = 2		# vanilla 2
+}

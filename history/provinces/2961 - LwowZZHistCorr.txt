@@ -1,0 +1,7 @@
+# HistoryCorrections - province development rebalance
+# 2961 - Lwow  [POL]  trade good: dyes
+# vanilla 5/5/2 (dev 12)  ->  3/4/1 (dev 8)
+
+base_tax = 3
+base_production = 4
+base_manpower = 1

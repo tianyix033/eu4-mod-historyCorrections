@@ -1,0 +1,13 @@
+# HistoryCorrections - province development rebalance
+# 181 - Rethel  [NEV]  trade good: cloth
+# vanilla 6/6/2 (dev 14)  ->  5/6/1 (dev 12)
+
+base_tax = 5
+base_production = 6
+base_manpower = 1
+
+# vanilla changes these later; rescaled so the correction is not undone
+1789.5.5 = {
+	base_tax = 8		# vanilla 10
+	base_production = 10		# vanilla 10
+}

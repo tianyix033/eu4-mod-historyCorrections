@@ -1,0 +1,7 @@
+# HistoryCorrections - province development rebalance
+# 200 - Languedoc  [FRA]  trade good: cloth
+# vanilla 6/5/5 (dev 16)  ->  4/5/4 (dev 13)
+
+base_tax = 4
+base_production = 5
+base_manpower = 4

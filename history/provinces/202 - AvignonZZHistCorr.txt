@@ -1,0 +1,7 @@
+# HistoryCorrections - province development rebalance
+# 202 - Avignon  [AVI]  trade good: cloth
+# vanilla 4/3/4 (dev 11)  ->  3/3/3 (dev 9)
+
+base_tax = 3
+base_production = 3
+base_manpower = 3

@@ -1,0 +1,7 @@
+# HistoryCorrections - province development rebalance
+# 2979 - Novarra  [MLO]  trade good: grain
+# vanilla 3/4/2 (dev 9)  ->  3/3/2 (dev 8)
+
+base_tax = 3
+base_production = 3
+base_manpower = 2

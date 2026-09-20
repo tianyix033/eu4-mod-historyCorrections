@@ -1,0 +1,7 @@
+# HistoryCorrections - province development rebalance
+# 4731 - Spoleto  [PAP]  trade good: livestock
+# vanilla 3/2/1 (dev 6)  ->  3/1/1 (dev 5)
+
+base_tax = 3
+base_production = 1
+base_manpower = 1

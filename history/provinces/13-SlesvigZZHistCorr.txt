@@ -1,0 +1,7 @@
+# HistoryCorrections - province development rebalance
+# 13-Slesvig  [SHL]  trade good: livestock
+# vanilla 4/4/3 (dev 11)  ->  3/3/2 (dev 8)
+
+base_tax = 3
+base_production = 3
+base_manpower = 2

@@ -1,0 +1,13 @@
+# HistoryCorrections - province development rebalance
+# 4311 - Karahisar  [KAR]  trade good: livestock
+# vanilla 2/2/2 (dev 6)  ->  2/1/1 (dev 4)
+
+base_tax = 2
+base_production = 1
+base_manpower = 1
+
+# vanilla changes these later; rescaled so the correction is not undone
+1740.1.1 = {
+	base_tax = 2		# vanilla 2
+	base_production = 1		# vanilla 2
+}

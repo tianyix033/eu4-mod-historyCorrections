@@ -1,0 +1,7 @@
+# HistoryCorrections - province development rebalance
+# 1877 - Charolais  [BUR]  trade good: salt
+# vanilla 4/4/3 (dev 11)  ->  3/4/2 (dev 9)
+
+base_tax = 3
+base_production = 4
+base_manpower = 2

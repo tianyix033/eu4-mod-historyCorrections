@@ -1,0 +1,7 @@
+# HistoryCorrections - province development rebalance
+# 4730 - Bologna  [BLG]  trade good: cloth
+# vanilla 5/4/3 (dev 12)  ->  5/4/2 (dev 11)
+
+base_tax = 5
+base_production = 4
+base_manpower = 2

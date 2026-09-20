@@ -1,0 +1,7 @@
+# HistoryCorrections - province development rebalance
+# 191 - Nevers  [NEV]  trade good: livestock
+# vanilla 5/5/3 (dev 13)  ->  4/4/3 (dev 11)
+
+base_tax = 4
+base_production = 4
+base_manpower = 3

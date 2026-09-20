@@ -1,0 +1,13 @@
+# HistoryCorrections - province development rebalance
+# 99 - Gelre  [GEL]  trade good: livestock
+# vanilla 6/6/3 (dev 15)  ->  5/3/2 (dev 10)
+
+base_tax = 5
+base_production = 3
+base_manpower = 2
+
+# vanilla changes these later; rescaled so the correction is not undone
+1681.1.1 = {
+	base_tax = 8		# vanilla 9
+	base_production = 4		# vanilla 9
+}

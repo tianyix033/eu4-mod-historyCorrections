@@ -1,0 +1,7 @@
+# HistoryCorrections - province development rebalance
+# 1079 - Viatka  [MOS]  trade good: copper
+# vanilla 3/3/4 (dev 10)  ->  2/3/2 (dev 7)
+
+base_tax = 2
+base_production = 3
+base_manpower = 2

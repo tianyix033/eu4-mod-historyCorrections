@@ -1,0 +1,7 @@
+# HistoryCorrections - province development rebalance
+# 205 - Savoie  [SAV]  trade good: cloth
+# vanilla 6/6/3 (dev 15)  ->  5/5/2 (dev 12)
+
+base_tax = 5
+base_production = 5
+base_manpower = 2

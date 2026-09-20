@@ -1,0 +1,13 @@
+# HistoryCorrections - province development rebalance
+# 4713 - Urach  [WUR]  trade good: grain
+# vanilla 3/3/2 (dev 8)  ->  3/2/1 (dev 6)
+
+base_tax = 3
+base_production = 2
+base_manpower = 1
+
+# vanilla changes these later; rescaled so the correction is not undone
+1733.1.1 = {
+	base_tax = 5		# vanilla 5
+	base_production = 3		# vanilla 5
+}

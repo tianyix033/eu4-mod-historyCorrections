@@ -1,0 +1,13 @@
+# HistoryCorrections - province development rebalance
+# 2418 - Ukek  [GOL]  trade good: iron
+# vanilla 2/2/3 (dev 7)  ->  1/2/2 (dev 5)
+
+base_tax = 1
+base_production = 2
+base_manpower = 2
+
+# vanilla changes these later; rescaled so the correction is not undone
+1764.7.24 = {
+	base_tax = 4		# vanilla 9
+	base_production = 9		# vanilla 9
+}

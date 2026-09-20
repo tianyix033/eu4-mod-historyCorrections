@@ -1,0 +1,7 @@
+# HistoryCorrections - province development rebalance
+# 178 - Anjou  [PRO]  trade good: cloth
+# vanilla 5/5/5 (dev 15)  ->  4/4/4 (dev 12)
+
+base_tax = 4
+base_production = 4
+base_manpower = 4

@@ -1,0 +1,13 @@
+# HistoryCorrections - province development rebalance
+# 324 - Karaman  [KAR]  trade good: livestock
+# vanilla 5/5/4 (dev 14)  ->  4/4/2 (dev 10)
+
+base_tax = 4
+base_production = 4
+base_manpower = 2
+
+# vanilla changes these later; rescaled so the correction is not undone
+1740.1.1 = {
+	base_tax = 2		# vanilla 2
+	base_production = 2		# vanilla 2
+}

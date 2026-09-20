@@ -1,0 +1,7 @@
+# HistoryCorrections - province development rebalance
+# 238 - Essex  [ENG]  trade good: cloth
+# vanilla 6/6/2 (dev 14)  ->  4/5/1 (dev 10)
+
+base_tax = 4
+base_production = 5
+base_manpower = 1

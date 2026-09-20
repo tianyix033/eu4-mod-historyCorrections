@@ -1,0 +1,18 @@
+# HistoryCorrections - province development rebalance
+# 134 - Wien  [HAB]  trade good: wine
+# vanilla 6/6/6 (dev 18)  ->  4/5/3 (dev 12)
+
+base_tax = 4
+base_production = 5
+base_manpower = 3
+
+# vanilla changes these later; rescaled so the correction is not undone
+1545.1.1 = {
+	base_manpower = 2		# vanilla 3
+}
+1650.1.1 = {
+	base_manpower = 2		# vanilla 4
+}
+1700.1.1 = {
+	base_manpower = 3		# vanilla 6
+}

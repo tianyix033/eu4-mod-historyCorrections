@@ -1,0 +1,7 @@
+# HistoryCorrections - province development rebalance
+# 108 - Verona  [MLO]  trade good: grain
+# vanilla 5/5/3 (dev 13)  ->  6/4/2 (dev 12)
+
+base_tax = 6
+base_production = 4
+base_manpower = 2

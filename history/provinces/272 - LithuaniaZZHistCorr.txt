@@ -1,0 +1,7 @@
+# HistoryCorrections - province development rebalance
+# 272 - Lithuania  [LIT]  trade good: grain
+# vanilla 5/5/3 (dev 13)  ->  3/4/2 (dev 9)
+
+base_tax = 3
+base_production = 4
+base_manpower = 2

@@ -1,0 +1,13 @@
+# HistoryCorrections - province development rebalance
+# 4111 - Saintonge  [FRA]  trade good: grain
+# vanilla 4/4/2 (dev 10)  ->  3/3/2 (dev 8)
+
+base_tax = 3
+base_production = 3
+base_manpower = 2
+
+# vanilla changes these later; rescaled so the correction is not undone
+1749.1.1 = {
+	base_tax = 4		# vanilla 6
+	base_production = 4		# vanilla 6
+}

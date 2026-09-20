@@ -1,0 +1,7 @@
+# HistoryCorrections - province development rebalance
+# 4388 - Chartres  [FRA]  trade good: cloth
+# vanilla 5/5/6 (dev 16)  ->  4/4/5 (dev 13)
+
+base_tax = 4
+base_production = 4
+base_manpower = 5

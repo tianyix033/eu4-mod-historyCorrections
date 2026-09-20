@@ -1,0 +1,13 @@
+# HistoryCorrections - province development rebalance
+# 325 - Kastamonu  [CND]  trade good: copper
+# vanilla 3/5/2 (dev 10)  ->  2/4/1 (dev 7)
+
+base_tax = 2
+base_production = 4
+base_manpower = 1
+
+# vanilla changes these later; rescaled so the correction is not undone
+1740.1.1 = {
+	base_tax = 3		# vanilla 5
+	base_production = 4		# vanilla 5
+}

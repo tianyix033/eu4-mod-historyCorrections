@@ -1,0 +1,7 @@
+# HistoryCorrections - province development rebalance
+# 2982 - Syracuse  [SIC]  trade good: wine
+# vanilla 4/4/2 (dev 10)  ->  4/4/1 (dev 9)
+
+base_tax = 4
+base_production = 4
+base_manpower = 1

@@ -1,0 +1,17 @@
+# HistoryCorrections - province development rebalance
+# 1956 - Suzdal  [MOS]  trade good: grain
+# vanilla 4/4/3 (dev 11)  ->  3/3/2 (dev 8)
+
+base_tax = 3
+base_production = 3
+base_manpower = 2
+
+# vanilla changes these later; rescaled so the correction is not undone
+1719.1.1 = {
+	base_tax = 4		# vanilla 5
+	base_production = 4		# vanilla 5
+}
+1767.1.1 = {
+	base_tax = 5		# vanilla 7
+	base_production = 5		# vanilla 7
+}

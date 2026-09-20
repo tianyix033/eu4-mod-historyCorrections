@@ -1,0 +1,7 @@
+# HistoryCorrections - province development rebalance
+# 92 - Brabant  [BRB]  trade good: cloth
+# vanilla 7/7/4 (dev 18)  ->  5/5/2 (dev 12)
+
+base_tax = 5
+base_production = 5
+base_manpower = 2

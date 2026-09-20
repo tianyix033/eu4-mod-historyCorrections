@@ -1,0 +1,7 @@
+# HistoryCorrections - province development rebalance
+# 1931 - East Frisia  [EFR]  trade good: salt
+# vanilla 2/2/3 (dev 7)  ->  2/1/2 (dev 5)
+
+base_tax = 2
+base_production = 1
+base_manpower = 2

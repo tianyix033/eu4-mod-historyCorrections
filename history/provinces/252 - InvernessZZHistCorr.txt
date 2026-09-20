@@ -1,0 +1,7 @@
+# HistoryCorrections - province development rebalance
+# 252 - Inverness  [SCO]  trade good: wool
+# vanilla 2/2/3 (dev 7)  ->  1/2/2 (dev 5)
+
+base_tax = 1
+base_production = 2
+base_manpower = 2

@@ -1,0 +1,7 @@
+# HistoryCorrections - province development rebalance
+# 105 - Parma  [MLO]  trade good: livestock
+# vanilla 6/5/4 (dev 15)  ->  7/4/3 (dev 14)
+
+base_tax = 7
+base_production = 4
+base_manpower = 3

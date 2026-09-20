@@ -1,0 +1,13 @@
+# HistoryCorrections - province development rebalance
+# 1876 - Frankfurt  [FRN]  trade good: paper
+# vanilla 7/7/4 (dev 18)  ->  5/5/2 (dev 12)
+
+base_tax = 5
+base_production = 5
+base_manpower = 2
+
+# vanilla changes these later; rescaled so the correction is not undone
+1685.1.1 = {
+	base_tax = 7		# vanilla 10
+	base_production = 7		# vanilla 10
+}

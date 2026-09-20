@@ -1,0 +1,7 @@
+# HistoryCorrections - province development rebalance
+# 130 - Istria  [VEN]  trade good: salt
+# vanilla 2/3/3 (dev 8)  ->  2/2/2 (dev 6)
+
+base_tax = 2
+base_production = 2
+base_manpower = 2

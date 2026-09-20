@@ -1,0 +1,13 @@
+# HistoryCorrections - province development rebalance
+# 81 - Hessen  [HES]  trade good: wool
+# vanilla 4/3/3 (dev 10)  ->  3/2/2 (dev 7)
+
+base_tax = 3
+base_production = 2
+base_manpower = 2
+
+# vanilla changes these later; rescaled so the correction is not undone
+1555.1.1 = {
+	base_tax = 10		# vanilla 14
+	base_production = 9		# vanilla 14
+}

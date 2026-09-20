@@ -1,0 +1,7 @@
+# HistoryCorrections - province development rebalance
+# 184 - Orleanais  [FRA]  trade good: grain
+# vanilla 6/6/5 (dev 17)  ->  5/5/4 (dev 14)
+
+base_tax = 5
+base_production = 5
+base_manpower = 4

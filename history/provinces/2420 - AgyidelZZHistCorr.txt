@@ -1,0 +1,7 @@
+# HistoryCorrections - province development rebalance
+# 2420 - Agyidel  [NOG]  trade good: iron
+# vanilla 4/4/3 (dev 11)  ->  2/4/2 (dev 8)
+
+base_tax = 2
+base_production = 4
+base_manpower = 2

@@ -1,0 +1,17 @@
+# HistoryCorrections - province development rebalance
+# 86 - Munster  [MUN]  trade good: cloth
+# vanilla 4/4/4 (dev 12)  ->  3/3/2 (dev 8)
+
+base_tax = 3
+base_production = 3
+base_manpower = 2
+
+# vanilla changes these later; rescaled so the correction is not undone
+1643.1.1 = {
+	base_manpower = 1		# vanilla 1
+}
+1723.1.1 = {
+	base_tax = 6		# vanilla 8
+	base_production = 6		# vanilla 8
+	base_manpower = 1		# vanilla 2
+}

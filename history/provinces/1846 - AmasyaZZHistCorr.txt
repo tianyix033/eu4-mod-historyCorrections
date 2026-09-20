@@ -1,0 +1,13 @@
+# HistoryCorrections - province development rebalance
+# 1846 - Amasya  [TUR]  trade good: paper
+# vanilla 4/4/3 (dev 11)  ->  3/3/2 (dev 8)
+
+base_tax = 3
+base_production = 3
+base_manpower = 2
+
+# vanilla changes these later; rescaled so the correction is not undone
+1740.1.1 = {
+	base_tax = 2		# vanilla 3
+	base_production = 2		# vanilla 3
+}

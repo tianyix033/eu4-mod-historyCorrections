@@ -1,0 +1,7 @@
+# HistoryCorrections - province development rebalance
+# 137 - Ragusa  [RAG]  trade good: salt
+# vanilla 5/6/3 (dev 14)  ->  3/5/2 (dev 10)
+
+base_tax = 3
+base_production = 5
+base_manpower = 2

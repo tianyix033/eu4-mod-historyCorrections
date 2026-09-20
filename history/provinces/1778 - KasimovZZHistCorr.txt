@@ -1,0 +1,20 @@
+# HistoryCorrections - province development rebalance
+# 1778 - Kasimov  [MOS]  trade good: livestock
+# vanilla 4/4/5 (dev 13)  ->  3/3/3 (dev 9)
+
+base_tax = 3
+base_production = 3
+base_manpower = 3
+
+# vanilla changes these later; rescaled so the correction is not undone
+1598.1.7 = {
+	base_manpower = 4		# vanilla 6
+}
+1711.1.1 = {
+	base_tax = 5		# vanilla 7
+	base_production = 5		# vanilla 7
+}
+1767.1.1 = {
+	base_tax = 6		# vanilla 8
+	base_production = 6		# vanilla 8
+}

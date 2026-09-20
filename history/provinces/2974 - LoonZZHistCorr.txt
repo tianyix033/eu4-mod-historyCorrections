@@ -1,0 +1,7 @@
+# HistoryCorrections - province development rebalance
+# 2974 - Loon  [LIE]  trade good: cloth
+# vanilla 5/5/2 (dev 12)  ->  4/3/1 (dev 8)
+
+base_tax = 4
+base_production = 3
+base_manpower = 1

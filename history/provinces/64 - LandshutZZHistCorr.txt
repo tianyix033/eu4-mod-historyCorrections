@@ -1,0 +1,13 @@
+# HistoryCorrections - province development rebalance
+# 64 - Landshut  [LBV]  trade good: salt
+# vanilla 5/5/2 (dev 12)  ->  3/4/1 (dev 8)
+
+base_tax = 3
+base_production = 4
+base_manpower = 1
+
+# vanilla changes these later; rescaled so the correction is not undone
+1743.1.1 = {
+	base_tax = 2		# vanilla 4
+	base_production = 3		# vanilla 4
+}

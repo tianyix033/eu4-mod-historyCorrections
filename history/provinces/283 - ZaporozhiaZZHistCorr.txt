@@ -1,0 +1,12 @@
+# HistoryCorrections - province development rebalance
+# 283 - Zaporozhia  [CRI]  trade good: livestock
+# vanilla 1/1/2 (dev 4)  ->  1/1/1 (dev 3)
+
+base_tax = 1
+base_production = 1
+base_manpower = 1
+
+# vanilla changes these later; rescaled so the correction is not undone
+1555.1.1 = {
+	base_manpower = 2		# vanilla 4
+}

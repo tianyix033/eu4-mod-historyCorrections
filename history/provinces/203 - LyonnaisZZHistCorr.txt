@@ -1,0 +1,7 @@
+# HistoryCorrections - province development rebalance
+# 203 - Lyonnais  [FRA]  trade good: paper
+# vanilla 6/6/6 (dev 18)  ->  5/5/5 (dev 15)
+
+base_tax = 5
+base_production = 5
+base_manpower = 5

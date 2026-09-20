@@ -1,0 +1,7 @@
+# HistoryCorrections - province development rebalance
+# 4727 - Saluzzo  [SZO]  trade good: iron
+# vanilla 3/4/4 (dev 11)  ->  3/4/3 (dev 10)
+
+base_tax = 3
+base_production = 4
+base_manpower = 3

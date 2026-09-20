@@ -1,0 +1,7 @@
+# HistoryCorrections - province development rebalance
+# 102 - Nice  [SAV]  trade good: fish
+# vanilla 4/4/2 (dev 10)  ->  4/3/2 (dev 9)
+
+base_tax = 4
+base_production = 3
+base_manpower = 2

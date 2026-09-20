@@ -1,0 +1,7 @@
+# HistoryCorrections - province development rebalance
+# 464 - Astrakhan  [GOL]  trade good: wool
+# vanilla 5/5/5 (dev 15)  ->  3/4/3 (dev 10)
+
+base_tax = 3
+base_production = 4
+base_manpower = 3

@@ -1,0 +1,7 @@
+# HistoryCorrections - province development rebalance
+# 1865 - Ghent  [FLA]  trade good: cloth
+# vanilla 5/5/3 (dev 13)  ->  4/3/2 (dev 9)
+
+base_tax = 4
+base_production = 3
+base_manpower = 2

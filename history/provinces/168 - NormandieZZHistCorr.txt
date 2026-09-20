@@ -1,0 +1,13 @@
+# HistoryCorrections - province development rebalance
+# 168 - Normandie  [FRA]  trade good: cloth
+# vanilla 4/4/4 (dev 12)  ->  3/4/3 (dev 10)
+
+base_tax = 3
+base_production = 4
+base_manpower = 3
+
+# vanilla changes these later; rescaled so the correction is not undone
+1786.1.1 = {
+	base_tax = 4		# vanilla 5
+	base_production = 5		# vanilla 5
+}

@@ -1,0 +1,7 @@
+# HistoryCorrections - province development rebalance
+# 1875 - Turin  [SAV]  trade good: grain
+# vanilla 4/4/4 (dev 12)  ->  5/3/3 (dev 11)
+
+base_tax = 5
+base_production = 3
+base_manpower = 3

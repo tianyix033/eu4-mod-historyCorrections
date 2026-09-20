@@ -1,0 +1,7 @@
+# HistoryCorrections - province development rebalance
+# 107 - Brescia  [MLO]  trade good: cloth
+# vanilla 5/5/3 (dev 13)  ->  5/5/2 (dev 12)
+
+base_tax = 5
+base_production = 5
+base_manpower = 2

@@ -1,0 +1,14 @@
+# HistoryCorrections - province development rebalance
+# 2966 - Glogau  [GLG]  trade good: iron
+# vanilla 3/4/2 (dev 9)  ->  2/3/1 (dev 6)
+
+base_tax = 2
+base_production = 3
+base_manpower = 1
+
+# vanilla changes these later; rescaled so the correction is not undone
+1750.1.1 = {
+	base_tax = 5		# vanilla 8
+	base_production = 6		# vanilla 8
+	base_manpower = 6		# vanilla 13
+}

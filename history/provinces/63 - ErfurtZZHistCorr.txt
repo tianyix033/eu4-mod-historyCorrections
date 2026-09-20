@@ -1,0 +1,7 @@
+# HistoryCorrections - province development rebalance
+# 63 - Erfurt  [THU]  trade good: dyes
+# vanilla 5/4/3 (dev 12)  ->  3/3/2 (dev 8)
+
+base_tax = 3
+base_production = 3
+base_manpower = 2

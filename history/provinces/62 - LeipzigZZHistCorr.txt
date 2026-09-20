@@ -1,0 +1,7 @@
+# HistoryCorrections - province development rebalance
+# 62 - Leipzig  [SAX]  trade good: wool
+# vanilla 4/4/2 (dev 10)  ->  3/3/1 (dev 7)
+
+base_tax = 3
+base_production = 3
+base_manpower = 1

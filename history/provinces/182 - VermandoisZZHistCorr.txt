@@ -1,0 +1,7 @@
+# HistoryCorrections - province development rebalance
+# 182 - Vermandois  [FRA]  trade good: livestock
+# vanilla 5/5/4 (dev 14)  ->  4/4/4 (dev 12)
+
+base_tax = 4
+base_production = 4
+base_manpower = 4

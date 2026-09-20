@@ -1,0 +1,14 @@
+# HistoryCorrections - province development rebalance
+# 41 - Konigsberg  [TEU]  trade good: gems
+# vanilla 5/5/3 (dev 13)  ->  3/4/2 (dev 9)
+
+base_tax = 3
+base_production = 4
+base_manpower = 2
+
+# vanilla changes these later; rescaled so the correction is not undone
+1750.1.1 = {
+	base_tax = 5		# vanilla 8
+	base_production = 6		# vanilla 8
+	base_manpower = 3		# vanilla 4
+}

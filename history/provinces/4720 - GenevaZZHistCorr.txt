@@ -1,0 +1,7 @@
+# HistoryCorrections - province development rebalance
+# 4720 - Geneva  [GNV]  trade good: cloth
+# vanilla 6/4/3 (dev 13)  ->  4/3/2 (dev 9)
+
+base_tax = 4
+base_production = 3
+base_manpower = 2

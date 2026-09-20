@@ -1,0 +1,7 @@
+# HistoryCorrections - province development rebalance
+# 116 - Firenze  [LAN]  trade good: wine
+# vanilla 10/12/6 (dev 28)  ->  10/11/5 (dev 26)
+
+base_tax = 10
+base_production = 11
+base_manpower = 5

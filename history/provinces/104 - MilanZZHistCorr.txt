@@ -1,0 +1,7 @@
+# HistoryCorrections - province development rebalance
+# 104 - Milan  [MLO]  trade good: cloth
+# vanilla 8/7/6 (dev 21)  ->  8/7/4 (dev 19)
+
+base_tax = 8
+base_production = 7
+base_manpower = 4

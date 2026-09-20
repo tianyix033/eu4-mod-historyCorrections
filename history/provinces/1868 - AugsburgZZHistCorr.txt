@@ -1,0 +1,7 @@
+# HistoryCorrections - province development rebalance
+# 1868 - Augsburg  [AUG]  trade good: cloth
+# vanilla 7/6/4 (dev 17)  ->  5/5/2 (dev 12)
+
+base_tax = 5
+base_production = 5
+base_manpower = 2

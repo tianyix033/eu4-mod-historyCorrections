@@ -1,0 +1,17 @@
+# HistoryCorrections - province development rebalance
+# 4251 - Mozhaisk  [MOS]  trade good: grain
+# vanilla 3/3/2 (dev 8)  ->  2/3/1 (dev 6)
+
+base_tax = 2
+base_production = 3
+base_manpower = 1
+
+# vanilla changes these later; rescaled so the correction is not undone
+1711.1.1 = {
+	base_tax = 4		# vanilla 6
+	base_production = 6		# vanilla 6
+}
+1767.1.1 = {
+	base_tax = 5		# vanilla 7
+	base_production = 7		# vanilla 7
+}

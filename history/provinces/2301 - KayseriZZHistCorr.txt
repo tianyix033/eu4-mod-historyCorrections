@@ -1,0 +1,13 @@
+# HistoryCorrections - province development rebalance
+# 2301 - Kayseri  [KAR]  trade good: iron
+# vanilla 3/3/2 (dev 8)  ->  2/3/1 (dev 6)
+
+base_tax = 2
+base_production = 3
+base_manpower = 1
+
+# vanilla changes these later; rescaled so the correction is not undone
+1740.1.1 = {
+	base_tax = 1		# vanilla 1
+	base_production = 1		# vanilla 1
+}

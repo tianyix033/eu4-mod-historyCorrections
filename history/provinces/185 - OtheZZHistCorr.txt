@@ -1,0 +1,17 @@
+# HistoryCorrections - province development rebalance
+# 185 - Othe  [FRA]  trade good: paper
+# vanilla 5/5/5 (dev 15)  ->  4/4/4 (dev 12)
+
+base_tax = 4
+base_production = 4
+base_manpower = 4
+
+# vanilla changes these later; rescaled so the correction is not undone
+1621.1.1 = {
+	base_tax = 6		# vanilla 7
+	base_production = 6		# vanilla 7
+}
+1773.1.1 = {
+	base_tax = 6		# vanilla 8
+	base_production = 6		# vanilla 8
+}

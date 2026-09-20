@@ -1,0 +1,7 @@
+# HistoryCorrections - province development rebalance
+# 44 - Hamburg  [HAM]  trade good: fish
+# vanilla 7/7/5 (dev 19)  ->  5/5/3 (dev 13)
+
+base_tax = 5
+base_production = 5
+base_manpower = 3

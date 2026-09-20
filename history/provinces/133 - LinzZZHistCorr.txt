@@ -1,0 +1,15 @@
+# HistoryCorrections - province development rebalance
+# 133 - Linz  [HAB]  trade good: grain
+# vanilla 4/4/3 (dev 11)  ->  3/3/2 (dev 8)
+
+base_tax = 3
+base_production = 3
+base_manpower = 2
+
+# vanilla changes these later; rescaled so the correction is not undone
+1650.1.1 = {
+	base_manpower = 1		# vanilla 2
+}
+1700.1.1 = {
+	base_manpower = 2		# vanilla 3
+}

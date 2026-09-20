@@ -1,0 +1,7 @@
+# HistoryCorrections - province development rebalance
+# 173 - Labourd  [ENG]  trade good: wine
+# vanilla 3/3/4 (dev 10)  ->  2/3/3 (dev 8)
+
+base_tax = 2
+base_production = 3
+base_manpower = 3

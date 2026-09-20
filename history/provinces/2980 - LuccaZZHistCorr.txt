@@ -1,0 +1,7 @@
+# HistoryCorrections - province development rebalance
+# 2980 - Lucca  [LUC]  trade good: cloth
+# vanilla 6/6/2 (dev 14)  ->  6/6/1 (dev 13)
+
+base_tax = 6
+base_production = 6
+base_manpower = 1

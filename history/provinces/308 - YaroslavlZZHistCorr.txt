@@ -1,0 +1,24 @@
+# HistoryCorrections - province development rebalance
+# 308 - Yaroslavl  [YAR]  trade good: livestock
+# vanilla 4/4/3 (dev 11)  ->  3/3/2 (dev 8)
+
+base_tax = 3
+base_production = 3
+base_manpower = 2
+
+# vanilla changes these later; rescaled so the correction is not undone
+1560.1.1 = {
+	base_tax = 3		# vanilla 4
+	base_production = 3		# vanilla 4
+}
+1598.1.7 = {
+	base_manpower = 3		# vanilla 4
+}
+1711.1.1 = {
+	base_tax = 4		# vanilla 5
+	base_production = 4		# vanilla 5
+}
+1767.1.1 = {
+	base_tax = 4		# vanilla 6
+	base_production = 4		# vanilla 6
+}

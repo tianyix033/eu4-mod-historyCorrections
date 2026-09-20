@@ -1,0 +1,7 @@
+# HistoryCorrections - province development rebalance
+# 2992 - Albenga  [GEN]  trade good: naval_supplies
+# vanilla 6/6/1 (dev 13)  ->  6/5/1 (dev 12)
+
+base_tax = 6
+base_production = 5
+base_manpower = 1

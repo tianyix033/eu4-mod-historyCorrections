@@ -1,0 +1,7 @@
+# HistoryCorrections - province development rebalance
+# 2983 - Salerno  [NAP]  trade good: fish
+# vanilla 5/1/4 (dev 10)  ->  5/1/3 (dev 9)
+
+base_tax = 5
+base_production = 1
+base_manpower = 3

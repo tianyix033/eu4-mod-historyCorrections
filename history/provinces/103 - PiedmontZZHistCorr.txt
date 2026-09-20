@@ -1,0 +1,7 @@
+# HistoryCorrections - province development rebalance
+# 103 - Piedmont  [SAV]  trade good: wine
+# vanilla 7/7/3 (dev 17)  ->  7/7/2 (dev 16)
+
+base_tax = 7
+base_production = 7
+base_manpower = 2

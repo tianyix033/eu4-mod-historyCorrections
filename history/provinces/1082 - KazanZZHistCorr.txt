@@ -1,0 +1,7 @@
+# HistoryCorrections - province development rebalance
+# 1082 - Kazan  [KAZ]  trade good: grain
+# vanilla 6/6/3 (dev 15)  ->  4/4/2 (dev 10)
+
+base_tax = 4
+base_production = 4
+base_manpower = 2

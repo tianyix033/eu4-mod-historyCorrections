@@ -1,0 +1,7 @@
+# HistoryCorrections - province development rebalance
+# 2991 - Draguignan  [PRO]  trade good: wool
+# vanilla 3/3/2 (dev 8)  ->  2/3/2 (dev 7)
+
+base_tax = 2
+base_production = 3
+base_manpower = 2

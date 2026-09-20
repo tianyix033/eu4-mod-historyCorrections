@@ -1,0 +1,7 @@
+# HistoryCorrections - province development rebalance
+# 4771 - Verden  [VER]  trade good: livestock
+# vanilla 2/2/3 (dev 7)  ->  2/1/2 (dev 5)
+
+base_tax = 2
+base_production = 1
+base_manpower = 2

@@ -1,0 +1,7 @@
+# HistoryCorrections - province development rebalance
+# 466 - Sarai  [GOL]  trade good: wool
+# vanilla 6/6/5 (dev 17)  ->  4/5/3 (dev 12)
+
+base_tax = 4
+base_production = 5
+base_manpower = 3

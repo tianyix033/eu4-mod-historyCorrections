@@ -1,0 +1,7 @@
+# HistoryCorrections - province development rebalance
+# 251 - Aberdeen  [SCO]  trade good: fish
+# vanilla 3/3/3 (dev 9)  ->  2/2/2 (dev 6)
+
+base_tax = 2
+base_production = 2
+base_manpower = 2

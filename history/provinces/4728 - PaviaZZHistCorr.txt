@@ -1,0 +1,7 @@
+# HistoryCorrections - province development rebalance
+# 4728 - Pavia  [MLO]  trade good: grain
+# vanilla 6/5/5 (dev 16)  ->  7/4/4 (dev 15)
+
+base_tax = 7
+base_production = 4
+base_manpower = 4

@@ -1,0 +1,7 @@
+# HistoryCorrections - province development rebalance
+# 468 - Khazaria  [GOL]  trade good: livestock
+# vanilla 2/2/1 (dev 5)  ->  1/2/1 (dev 4)
+
+base_tax = 1
+base_production = 2
+base_manpower = 1

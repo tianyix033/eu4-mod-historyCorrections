@@ -1,0 +1,7 @@
+# HistoryCorrections - province development rebalance
+# 2981 - Montferrat  [MFA]  trade good: wine
+# vanilla 5/5/2 (dev 12)  ->  5/5/1 (dev 11)
+
+base_tax = 5
+base_production = 5
+base_manpower = 1

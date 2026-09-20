@@ -1,0 +1,25 @@
+# HistoryCorrections - province development rebalance
+# 236 - London  [ENG]  trade good: cloth
+# vanilla 7/7/6 (dev 20)  ->  5/6/3 (dev 14)
+
+base_tax = 5
+base_production = 6
+base_manpower = 3
+
+# vanilla changes these later; rescaled so the correction is not undone
+1580.1.1 = {
+	base_tax = 9		# vanilla 13
+	base_production = 11		# vanilla 13
+}
+1650.1.1 = {
+	base_tax = 11		# vanilla 15
+	base_production = 13		# vanilla 15
+}
+1707.5.12 = {
+	base_tax = 11		# vanilla 16
+	base_production = 14		# vanilla 16
+}
+1741.1.1 = {
+	base_tax = 13		# vanilla 18
+	base_production = 15		# vanilla 18
+}

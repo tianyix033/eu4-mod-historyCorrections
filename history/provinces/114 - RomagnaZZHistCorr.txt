@@ -1,0 +1,7 @@
+# HistoryCorrections - province development rebalance
+# 114 - Romagna  [VEN]  trade good: salt
+# vanilla 4/5/2 (dev 11)  ->  4/5/1 (dev 10)
+
+base_tax = 4
+base_production = 5
+base_manpower = 1

@@ -1,0 +1,7 @@
+# HistoryCorrections - province development rebalance
+# 220 - Valencia  [ARA]  trade good: cloth
+# vanilla 6/5/4 (dev 15)  ->  4/4/2 (dev 10)
+
+base_tax = 4
+base_production = 4
+base_manpower = 2

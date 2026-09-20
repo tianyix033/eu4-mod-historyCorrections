@@ -1,0 +1,7 @@
+# HistoryCorrections - province development rebalance
+# 4735 - Arborea  [SAR]  trade good: grain
+# vanilla 2/2/2 (dev 6)  ->  2/2/1 (dev 5)
+
+base_tax = 2
+base_production = 2
+base_manpower = 1

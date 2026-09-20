@@ -1,0 +1,13 @@
+# HistoryCorrections - province development rebalance
+# 188 - Metz  [LOR]  trade good: glass
+# vanilla 6/6/5 (dev 17)  ->  5/5/4 (dev 14)
+
+base_tax = 5
+base_production = 5
+base_manpower = 4
+
+# vanilla changes these later; rescaled so the correction is not undone
+1749.1.1 = {
+	base_tax = 7		# vanilla 8
+	base_production = 7		# vanilla 8
+}

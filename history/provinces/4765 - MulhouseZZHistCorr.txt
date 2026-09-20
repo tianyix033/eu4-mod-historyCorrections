@@ -1,0 +1,12 @@
+# HistoryCorrections - province development rebalance
+# 4765 - Mulhouse  [MLH]  trade good: cloth
+# vanilla 3/3/2 (dev 8)  ->  2/3/1 (dev 6)
+
+base_tax = 2
+base_production = 3
+base_manpower = 1
+
+# vanilla changes these later; rescaled so the correction is not undone
+1746.1.1 = {
+	base_production = 6		# vanilla 6
+}

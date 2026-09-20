@@ -1,0 +1,17 @@
+# HistoryCorrections - province development rebalance
+# 1759 - Potsdam  [BRA]  trade good: wool
+# vanilla 3/3/2 (dev 8)  ->  2/3/1 (dev 6)
+
+base_tax = 2
+base_production = 3
+base_manpower = 1
+
+# vanilla changes these later; rescaled so the correction is not undone
+1701.1.18 = {
+	base_tax = 5		# vanilla 8
+	base_production = 8		# vanilla 8
+	base_manpower = 4		# vanilla 7
+}
+1750.1.1 = {
+	base_manpower = 4		# vanilla 8
+}

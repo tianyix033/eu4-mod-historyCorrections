@@ -1,0 +1,17 @@
+# HistoryCorrections - province development rebalance
+# 186 - Champagne  [FRA]  trade good: wine
+# vanilla 6/6/4 (dev 16)  ->  5/5/3 (dev 13)
+
+base_tax = 5
+base_production = 5
+base_manpower = 3
+
+# vanilla changes these later; rescaled so the correction is not undone
+1621.1.1 = {
+	base_tax = 8		# vanilla 10
+	base_production = 8		# vanilla 10
+}
+1773.1.1 = {
+	base_tax = 9		# vanilla 11
+	base_production = 9		# vanilla 11
+}

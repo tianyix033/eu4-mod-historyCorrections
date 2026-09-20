@@ -1,0 +1,7 @@
+# HistoryCorrections - province development rebalance
+# 1870 - St Gallen  [SWI]  trade good: livestock
+# vanilla 4/4/2 (dev 10)  ->  3/3/1 (dev 7)
+
+base_tax = 3
+base_production = 3
+base_manpower = 1

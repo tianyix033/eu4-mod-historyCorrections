@@ -1,0 +1,7 @@
+# HistoryCorrections - province development rebalance
+# 4112 - Cahors  [FRA]  trade good: wine
+# vanilla 3/3/3 (dev 9)  ->  2/3/2 (dev 7)
+
+base_tax = 2
+base_production = 3
+base_manpower = 2

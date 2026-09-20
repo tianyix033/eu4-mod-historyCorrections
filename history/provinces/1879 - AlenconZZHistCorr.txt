@@ -1,0 +1,13 @@
+# HistoryCorrections - province development rebalance
+# 1879 - Alencon  [ENG]  trade good: livestock
+# vanilla 4/4/3 (dev 11)  ->  3/3/3 (dev 9)
+
+base_tax = 3
+base_production = 3
+base_manpower = 3
+
+# vanilla changes these later; rescaled so the correction is not undone
+1786.1.1 = {
+	base_tax = 4		# vanilla 6
+	base_production = 4		# vanilla 6
+}

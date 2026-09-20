@@ -1,0 +1,7 @@
+# HistoryCorrections - province development rebalance
+# 4766 - Verdun  [BAR]  trade good: grain
+# vanilla 3/3/3 (dev 9)  ->  2/2/3 (dev 7)
+
+base_tax = 2
+base_production = 2
+base_manpower = 3

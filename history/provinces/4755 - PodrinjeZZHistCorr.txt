@@ -1,0 +1,7 @@
+# HistoryCorrections - province development rebalance
+# 4755 - Podrinje  [BOS]  trade good: salt
+# vanilla 2/2/1 (dev 5)  ->  1/2/1 (dev 4)
+
+base_tax = 1
+base_production = 2
+base_manpower = 1

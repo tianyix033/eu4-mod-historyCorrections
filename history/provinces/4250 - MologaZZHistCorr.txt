@@ -1,0 +1,24 @@
+# HistoryCorrections - province development rebalance
+# 4250 - Mologa  [YAR]  trade good: livestock
+# vanilla 2/2/2 (dev 6)  ->  1/2/1 (dev 4)
+
+base_tax = 1
+base_production = 2
+base_manpower = 1
+
+# vanilla changes these later; rescaled so the correction is not undone
+1560.1.1 = {
+	base_tax = 2		# vanilla 4
+	base_production = 4		# vanilla 4
+}
+1598.1.7 = {
+	base_manpower = 2		# vanilla 4
+}
+1711.1.1 = {
+	base_tax = 2		# vanilla 5
+	base_production = 5		# vanilla 5
+}
+1767.1.1 = {
+	base_tax = 3		# vanilla 6
+	base_production = 6		# vanilla 6
+}

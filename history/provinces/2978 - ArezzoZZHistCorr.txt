@@ -1,0 +1,7 @@
+# HistoryCorrections - province development rebalance
+# 2978 - Arezzo  [LAN]  trade good: livestock
+# vanilla 6/6/2 (dev 14)  ->  7/5/1 (dev 13)
+
+base_tax = 7
+base_production = 5
+base_manpower = 1

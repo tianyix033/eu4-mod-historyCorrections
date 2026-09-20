@@ -1,0 +1,13 @@
+# HistoryCorrections - province development rebalance
+# 1743 - Cambray  [BUR]  trade good: grain
+# vanilla 5/5/2 (dev 12)  ->  4/4/2 (dev 10)
+
+base_tax = 4
+base_production = 4
+base_manpower = 2
+
+# vanilla changes these later; rescaled so the correction is not undone
+1789.5.5 = {
+	base_tax = 5		# vanilla 6
+	base_production = 5		# vanilla 6
+}

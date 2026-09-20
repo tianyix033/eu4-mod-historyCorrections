@@ -1,0 +1,17 @@
+# HistoryCorrections - province development rebalance
+# 52 - Magdeburg  [MAG]  trade good: cloth
+# vanilla 4/4/2 (dev 10)  ->  3/3/1 (dev 7)
+
+base_tax = 3
+base_production = 3
+base_manpower = 1
+
+# vanilla changes these later; rescaled so the correction is not undone
+1725.1.1 = {
+	base_manpower = 2		# vanilla 4
+}
+1750.1.1 = {
+	base_tax = 8		# vanilla 10
+	base_production = 8		# vanilla 10
+	base_manpower = 2		# vanilla 5
+}

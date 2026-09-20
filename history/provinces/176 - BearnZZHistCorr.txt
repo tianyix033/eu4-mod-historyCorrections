@@ -1,0 +1,7 @@
+# HistoryCorrections - province development rebalance
+# 176 - Bearn  [FRA]  trade good: wool
+# vanilla 4/4/4 (dev 12)  ->  3/4/3 (dev 10)
+
+base_tax = 3
+base_production = 4
+base_manpower = 3

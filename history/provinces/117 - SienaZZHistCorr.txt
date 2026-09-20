@@ -1,0 +1,7 @@
+# HistoryCorrections - province development rebalance
+# 117 - Siena  [SIE]  trade good: glass
+# vanilla 8/8/4 (dev 20)  ->  8/7/3 (dev 18)
+
+base_tax = 8
+base_production = 7
+base_manpower = 3

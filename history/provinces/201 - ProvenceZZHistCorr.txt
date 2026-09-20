@@ -1,0 +1,7 @@
+# HistoryCorrections - province development rebalance
+# 201 - Provence  [PRO]  trade good: wine
+# vanilla 7/7/6 (dev 20)  ->  6/6/5 (dev 17)
+
+base_tax = 6
+base_production = 6
+base_manpower = 5

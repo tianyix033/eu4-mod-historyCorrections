@@ -1,0 +1,7 @@
+# HistoryCorrections - province development rebalance
+# 1744 - Antwerpen  [BRB]  trade good: glass
+# vanilla 8/8/3 (dev 19)  ->  6/5/2 (dev 13)
+
+base_tax = 6
+base_production = 5
+base_manpower = 2

@@ -1,0 +1,7 @@
+# HistoryCorrections - province development rebalance
+# 124 - Messina  [SIC]  trade good: fish
+# vanilla 6/6/5 (dev 17)  ->  7/5/4 (dev 16)
+
+base_tax = 7
+base_production = 5
+base_manpower = 4

@@ -1,0 +1,7 @@
+# HistoryCorrections - province development rebalance
+# 101 - Genoa  [GEN]  trade good: paper
+# vanilla 10/10/5 (dev 25)  ->  10/9/4 (dev 23)
+
+base_tax = 10
+base_production = 9
+base_manpower = 4

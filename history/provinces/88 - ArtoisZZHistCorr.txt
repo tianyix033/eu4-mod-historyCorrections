@@ -1,0 +1,13 @@
+# HistoryCorrections - province development rebalance
+# 88 - Artois  [BUR]  trade good: cloth
+# vanilla 6/6/3 (dev 15)  ->  5/5/2 (dev 12)
+
+base_tax = 5
+base_production = 5
+base_manpower = 2
+
+# vanilla changes these later; rescaled so the correction is not undone
+1789.5.5 = {
+	base_tax = 8		# vanilla 10
+	base_production = 8		# vanilla 10
+}

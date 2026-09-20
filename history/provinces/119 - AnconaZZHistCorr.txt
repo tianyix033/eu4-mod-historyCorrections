@@ -1,0 +1,7 @@
+# HistoryCorrections - province development rebalance
+# 119 - Ancona  [PAP]  trade good: paper
+# vanilla 5/5/4 (dev 14)  ->  5/5/3 (dev 13)
+
+base_tax = 5
+base_production = 5
+base_manpower = 3

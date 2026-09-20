@@ -1,0 +1,19 @@
+# HistoryCorrections - province development rebalance
+# 49 - Neumark  [BRA]  trade good: livestock
+# vanilla 2/2/2 (dev 6)  ->  2/1/1 (dev 4)
+
+base_tax = 2
+base_production = 1
+base_manpower = 1
+
+# vanilla changes these later; rescaled so the correction is not undone
+1725.1.1 = {
+	base_tax = 6		# vanilla 6
+	base_production = 3		# vanilla 6
+	base_manpower = 2		# vanilla 4
+}
+1750.1.1 = {
+	base_tax = 7		# vanilla 7
+	base_production = 4		# vanilla 7
+	base_manpower = 2		# vanilla 5
+}

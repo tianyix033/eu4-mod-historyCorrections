@@ -1,0 +1,7 @@
+# HistoryCorrections - province development rebalance
+# 187 - Barrois  [BAR]  trade good: cloth
+# vanilla 3/4/3 (dev 10)  ->  2/4/2 (dev 8)
+
+base_tax = 2
+base_production = 4
+base_manpower = 2

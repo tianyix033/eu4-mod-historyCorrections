@@ -1,0 +1,25 @@
+# HistoryCorrections - province development rebalance
+# 295 - Moskva  [MOS]  trade good: iron
+# vanilla 6/6/5 (dev 17)  ->  4/5/3 (dev 12)
+
+base_tax = 4
+base_production = 5
+base_manpower = 3
+
+# vanilla changes these later; rescaled so the correction is not undone
+1560.1.1 = {
+	base_tax = 9		# vanilla 14
+	base_production = 12		# vanilla 14
+}
+1580.1.1 = {
+	base_tax = 9		# vanilla 13
+	base_production = 11		# vanilla 13
+}
+1711.1.1 = {
+	base_tax = 9		# vanilla 14
+	base_production = 12		# vanilla 14
+}
+1767.1.1 = {
+	base_tax = 10		# vanilla 15
+	base_production = 12		# vanilla 15
+}

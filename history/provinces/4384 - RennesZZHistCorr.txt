@@ -1,0 +1,7 @@
+# HistoryCorrections - province development rebalance
+# 4384 - Rennes  [BRI]  trade good: cloth
+# vanilla 4/4/4 (dev 12)  ->  3/4/3 (dev 10)
+
+base_tax = 3
+base_production = 4
+base_manpower = 3

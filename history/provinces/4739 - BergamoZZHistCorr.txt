@@ -1,0 +1,7 @@
+# HistoryCorrections - province development rebalance
+# 4739 - Bergamo  [MLO]  trade good: cloth
+# vanilla 4/3/2 (dev 9)  ->  4/3/1 (dev 8)
+
+base_tax = 4
+base_production = 3
+base_manpower = 1

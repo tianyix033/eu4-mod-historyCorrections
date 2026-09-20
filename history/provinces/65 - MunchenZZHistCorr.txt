@@ -1,0 +1,17 @@
+# HistoryCorrections - province development rebalance
+# 65 - Munchen  [UBV]  trade good: grain
+# vanilla 6/5/4 (dev 15)  ->  5/3/2 (dev 10)
+
+base_tax = 5
+base_production = 3
+base_manpower = 2
+
+# vanilla changes these later; rescaled so the correction is not undone
+1632.1.1 = {
+	base_tax = 4		# vanilla 5
+	base_production = 3		# vanilla 5
+}
+1700.1.1 = {
+	base_tax = 5		# vanilla 6
+	base_production = 4		# vanilla 6
+}

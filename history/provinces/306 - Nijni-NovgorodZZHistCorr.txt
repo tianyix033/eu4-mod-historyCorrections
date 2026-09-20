@@ -1,0 +1,21 @@
+# HistoryCorrections - province development rebalance
+# 306 - Nijni-Novgorod  [MOS]  trade good: copper
+# vanilla 5/5/3 (dev 13)  ->  3/4/2 (dev 9)
+
+base_tax = 3
+base_production = 4
+base_manpower = 2
+
+# vanilla changes these later; rescaled so the correction is not undone
+1560.1.1 = {
+	base_tax = 4		# vanilla 7
+	base_production = 6		# vanilla 7
+}
+1719.1.1 = {
+	base_tax = 5		# vanilla 8
+	base_production = 6		# vanilla 8
+}
+1767.1.1 = {
+	base_tax = 5		# vanilla 9
+	base_production = 7		# vanilla 9
+}

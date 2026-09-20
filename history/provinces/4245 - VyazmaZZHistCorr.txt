@@ -1,0 +1,13 @@
+# HistoryCorrections - province development rebalance
+# 4245 - Vyazma  [SMO]  trade good: cloth
+# vanilla 2/2/1 (dev 5)  ->  1/2/1 (dev 4)
+
+base_tax = 1
+base_production = 2
+base_manpower = 1
+
+# vanilla changes these later; rescaled so the correction is not undone
+1711.1.1 = {
+	base_tax = 2		# vanilla 5
+	base_production = 5		# vanilla 5
+}

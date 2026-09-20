@@ -1,0 +1,7 @@
+# HistoryCorrections - province development rebalance
+# 1872 - Ulm  [ULM]  trade good: cloth
+# vanilla 5/6/4 (dev 15)  ->  3/5/2 (dev 10)
+
+base_tax = 3
+base_production = 5
+base_manpower = 2

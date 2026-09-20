@@ -1,0 +1,17 @@
+# HistoryCorrections - province development rebalance
+# 316 - Kocaeli  [TUR]  trade good: grain
+# vanilla 3/3/3 (dev 9)  ->  2/2/2 (dev 6)
+
+base_tax = 2
+base_production = 2
+base_manpower = 2
+
+# vanilla changes these later; rescaled so the correction is not undone
+1615.1.1 = {
+	base_tax = 3		# vanilla 5
+	base_production = 3		# vanilla 5
+}
+1718.1.1 = {
+	base_tax = 5		# vanilla 7
+	base_production = 5		# vanilla 7
+}

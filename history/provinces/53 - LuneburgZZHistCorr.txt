@@ -1,0 +1,13 @@
+# HistoryCorrections - province development rebalance
+# 53 - Luneburg  [LUN]  trade good: salt
+# vanilla 3/3/2 (dev 8)  ->  2/3/1 (dev 6)
+
+base_tax = 2
+base_production = 3
+base_manpower = 1
+
+# vanilla changes these later; rescaled so the correction is not undone
+1550.1.1 = {
+	base_tax = 3		# vanilla 4
+	base_production = 4		# vanilla 4
+}

@@ -1,0 +1,7 @@
+# HistoryCorrections - province development rebalance
+# 118 - Roma  [PAP]  trade good: paper
+# vanilla 9/9/7 (dev 25)  ->  9/9/5 (dev 23)
+
+base_tax = 9
+base_production = 9
+base_manpower = 5

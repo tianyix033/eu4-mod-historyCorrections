@@ -1,0 +1,17 @@
+# HistoryCorrections - province development rebalance
+# 194 - Bergerac  [FRA]  trade good: wine
+# vanilla 3/3/3 (dev 9)  ->  2/3/2 (dev 7)
+
+base_tax = 2
+base_production = 3
+base_manpower = 2
+
+# vanilla changes these later; rescaled so the correction is not undone
+1589.1.1 = {
+	base_tax = 3		# vanilla 4
+	base_production = 4		# vanilla 4
+}
+1749.1.1 = {
+	base_tax = 3		# vanilla 5
+	base_production = 5		# vanilla 5
+}
