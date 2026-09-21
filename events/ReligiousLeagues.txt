@@ -485,7 +485,9 @@ country_event = {
 		hre_religion_locked = no
 		hre_religion_treaty = no
 		is_emperor = yes		
-		is_year = 1550
+		is_year = 1600		#@ was 1550. The Age of Reformation ends around 1610, and the
+							#@ historical league war ran 1618-1648, so the leagues should not
+							#@ be forming in the middle of the sixteenth century.
 		religion = catholic
 		has_global_flag = counter_reformation
 		any_known_country = {
@@ -504,14 +506,13 @@ country_event = {
 	
 	mean_time_to_happen = {
 		months = 120
-		modifier = {
-			factor = 0.5
-			is_year = 1575
+		modifier = {					#@ replaces the old 1575 and 1600 year steps, which are
+			factor = 0.1				#@ dead or always-true now the gate is 1600. Once the
+			OR = {						#@ Reformation is over the league becomes likely fast.
+				current_age = age_of_absolutism
+				current_age = age_of_revolutions
+			}
 		}
-		modifier = {
-			factor = 0.1
-			is_year = 1600
-		}		
 	}
 
 	option = {
