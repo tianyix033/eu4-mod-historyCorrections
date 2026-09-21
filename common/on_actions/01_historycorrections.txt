@@ -17,4 +17,11 @@
 on_startup = {
 	add_army_tradition = 25
 	add_navy_tradition = 25
+	set_country_flag = hc_claimed_starting_tradition
+}
+
+# A country annexed now may be released again later, at which point it should be
+# able to claim again. FROM is the annexed country.
+on_annexed = {
+	FROM = { clr_country_flag = hc_claimed_starting_tradition }
 }

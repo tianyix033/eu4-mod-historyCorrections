@@ -1,0 +1,63 @@
+# HistoryCorrections
+#
+# Countries alive at the 1444 start get their tradition from on_startup, and
+# their war-history bonus from history/countries/. Countries that appear later
+# get neither: on_startup has already fired, and no on_action covers every way a
+# country can be born. Probing all eight routes in game found that rebel
+# demands, rebel victories and script releases (Wu, Yue) fire no hook at all,
+# and on_country_creation fired for none of them.
+#
+# So later arrivals claim it themselves, once, via this decision. The flag is
+# set by on_startup for every 1444 country, so they never see it. on_annexed
+# clears the flag, so a tag that dies and is released again can claim afresh.
+
+country_decisions = {
+
+	hc_claim_starting_tradition = {
+		major = no
+		potential = {
+			NOT = { has_country_flag = hc_claimed_starting_tradition }
+		}
+		allow = {
+			always = yes
+		}
+		effect = {
+			set_country_flag = hc_claimed_starting_tradition
+
+			# army: constant warfare is the normal state for these
+			if = {
+				limit = {
+					OR = {
+						has_reform = steppe_horde
+						has_government_attribute = enables_horde_idea_group
+						has_reform = native_basic_reform
+						has_reform = native_hereditary_reform
+						has_reform = native_federation_reform
+						has_reform = daimyo
+						has_reform = indep_daimyo
+					}
+				}
+				add_army_tradition = 50
+			}
+			else = {
+				add_army_tradition = 25
+			}
+
+			# navy: government types that only exist at sea
+			if = {
+				limit = { has_government_attribute = is_pirate_republic_reform }
+				add_navy_tradition = 50
+			}
+			else_if = {
+				limit = { has_government_attribute = is_merchant_republic }
+				add_navy_tradition = 40
+			}
+			else = {
+				add_navy_tradition = 25
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}
