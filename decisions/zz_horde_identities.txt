@@ -1,0 +1,132 @@
+# HistoryCorrections
+#
+# Kazakh, Khalkha, Zunghar and Khoshuud exist as tags with full histories but
+# have no formation decision, so they essentially never appear in a game.
+#
+# These are reactive rather than aspirational. The only gate is already being a
+# horde of the matching primary culture -- there is nothing to conquer toward.
+# A Mongolia reduced to its Khalkha provinces, pressured into switching primary
+# culture, has in effect become the Khalkha; this lets the tag follow.
+#
+# The AI always takes it (ai_will_do factor 1) because by the time it qualifies
+# the identity has already changed in everything but name.
+#
+# khazak and khalkha are unique to their tags. oirats is shared by six tags,
+# so Zunghar and Khoshuud additionally require their historical capital --
+# Kobdo for Dzungaria, Tsaidam for the Khoshuud in Qinghai.
+#
+# No ideagroups.1 swap is offered: none of these four tags has national ideas
+# of its own, so a swap could only move them off what they already hold.
+
+country_decisions = {
+
+	hc_form_kazakh = {
+		major = no
+		potential = {
+			normal_or_historical_nations = yes
+			was_never_end_game_tag_trigger = yes
+			NOT = { tag = KZH }
+			NOT = { exists = KZH }
+			is_colonial_nation = no
+			primary_culture = khazak
+			OR = {
+				has_reform = steppe_horde
+				has_government_attribute = enables_horde_idea_group
+			}
+		}
+		allow = {
+			is_free_or_tributary_trigger = yes
+			is_at_war = no
+		}
+		effect = {
+			change_tag = KZH
+			add_prestige = 10
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	hc_form_khalkha = {
+		major = no
+		potential = {
+			normal_or_historical_nations = yes
+			was_never_end_game_tag_trigger = yes
+			NOT = { tag = KLK }
+			NOT = { exists = KLK }
+			is_colonial_nation = no
+			primary_culture = khalkha
+			OR = {
+				has_reform = steppe_horde
+				has_government_attribute = enables_horde_idea_group
+			}
+		}
+		allow = {
+			is_free_or_tributary_trigger = yes
+			is_at_war = no
+		}
+		effect = {
+			change_tag = KLK
+			add_prestige = 10
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	hc_form_zunghar = {
+		major = no
+		potential = {
+			normal_or_historical_nations = yes
+			was_never_end_game_tag_trigger = yes
+			NOT = { tag = ZUN }
+			NOT = { exists = ZUN }
+			is_colonial_nation = no
+			primary_culture = oirats
+			OR = {
+				has_reform = steppe_horde
+				has_government_attribute = enables_horde_idea_group
+			}
+		}
+		allow = {
+			is_free_or_tributary_trigger = yes
+			is_at_war = no
+			owns = 718		# Kobdo, in Dzungaria
+		}
+		effect = {
+			change_tag = ZUN
+			add_prestige = 10
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	hc_form_khoshuud = {
+		major = no
+		potential = {
+			normal_or_historical_nations = yes
+			was_never_end_game_tag_trigger = yes
+			NOT = { tag = KSD }
+			NOT = { exists = KSD }
+			is_colonial_nation = no
+			primary_culture = oirats
+			OR = {
+				has_reform = steppe_horde
+				has_government_attribute = enables_horde_idea_group
+			}
+		}
+		allow = {
+			is_free_or_tributary_trigger = yes
+			is_at_war = no
+			owns = 706		# Tsaidam, in Qinghai
+		}
+		effect = {
+			change_tag = KSD
+			add_prestige = 10
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}
