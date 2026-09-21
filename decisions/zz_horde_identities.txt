@@ -3,17 +3,20 @@
 # Kazakh, Khalkha, Zunghar and Khoshuud exist as tags with full histories but
 # have no formation decision, so they essentially never appear in a game.
 #
-# These are reactive rather than aspirational. The only gate is already being a
-# horde of the matching primary culture -- there is nothing to conquer toward.
-# A Mongolia reduced to its Khalkha provinces, pressured into switching primary
-# culture, has in effect become the Khalkha; this lets the tag follow.
+# These are reactive rather than aspirational. The gate is already being a
+# horde of the matching primary culture and holding the historical seat -- a
+# horde does not set out to become these, it discovers that it has.
 #
-# The AI always takes it (ai_will_do factor 1) because by the time it qualifies
-# the identity has already changed in everything but name.
+# The AI always takes it (ai_will_do factor 1) because by the time it
+# qualifies, the identity has already changed in everything but name.
 #
-# khazak and khalkha are unique to their tags. oirats is shared by six tags,
-# so Zunghar and Khoshuud additionally require their historical capital --
-# Kobdo for Dzungaria, Tsaidam for the Khoshuud in Qinghai.
+# On the cultures: khazak and khalkha are unique to their tags, so they gate
+# directly. Zunghar and Khoshuud cannot, because their historical culture
+# (oirats) is shared by six tags and the Oirat Horde already owns Kobdo at the
+# 1444 start -- it would have formed Zunghar on day one. They instead gate on
+# the culture of the people each ended up ruling: uyghur for the Dzungars over
+# the Tarim oases, tibetan for the Khoshuud under Gushri Khan. Neither
+# combination exists in 1444; no horde starts with either culture.
 #
 # No ideagroups.1 swap is offered: none of these four tags has national ideas
 # of its own, so a swap could only move them off what they already hold.
@@ -37,6 +40,7 @@ country_decisions = {
 		allow = {
 			is_free_or_tributary_trigger = yes
 			is_at_war = no
+			owns_core_province = 1969		# Sozak
 		}
 		effect = {
 			change_tag = KZH
@@ -64,6 +68,7 @@ country_decisions = {
 		allow = {
 			is_free_or_tributary_trigger = yes
 			is_at_war = no
+			owns_core_province = 4218		# Khalkha heartland
 		}
 		effect = {
 			change_tag = KLK
@@ -82,7 +87,7 @@ country_decisions = {
 			NOT = { tag = ZUN }
 			NOT = { exists = ZUN }
 			is_colonial_nation = no
-			primary_culture = oirats
+			primary_culture = uyghur
 			OR = {
 				has_reform = steppe_horde
 				has_government_attribute = enables_horde_idea_group
@@ -91,7 +96,7 @@ country_decisions = {
 		allow = {
 			is_free_or_tributary_trigger = yes
 			is_at_war = no
-			owns = 718		# Kobdo, in Dzungaria
+			owns_core_province = 718		# Kobdo
 		}
 		effect = {
 			change_tag = ZUN
@@ -110,7 +115,7 @@ country_decisions = {
 			NOT = { tag = KSD }
 			NOT = { exists = KSD }
 			is_colonial_nation = no
-			primary_culture = oirats
+			primary_culture = tibetan
 			OR = {
 				has_reform = steppe_horde
 				has_government_attribute = enables_horde_idea_group
@@ -119,7 +124,7 @@ country_decisions = {
 		allow = {
 			is_free_or_tributary_trigger = yes
 			is_at_war = no
-			owns = 706		# Tsaidam, in Qinghai
+			owns_core_province = 706		# Tsaidam
 		}
 		effect = {
 			change_tag = KSD
