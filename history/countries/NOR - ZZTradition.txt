@@ -1,0 +1,6 @@
+# HistoryCorrections - starting military tradition
+# NOR - Norway
+# on top of the flat 25 every country gets in common/on_actions/
+# reason: Kalmar Union conflicts
+
+add_army_tradition = 10

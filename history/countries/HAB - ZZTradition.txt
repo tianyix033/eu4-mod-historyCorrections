@@ -1,0 +1,6 @@
+# HistoryCorrections - starting military tradition
+# HAB - Austria
+# on top of the flat 25 every country gets in common/on_actions/
+# reason: Old Zurich War 1440-1446
+
+add_army_tradition = 20

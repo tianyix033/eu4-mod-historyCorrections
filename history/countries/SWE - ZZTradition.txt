@@ -1,0 +1,6 @@
+# HistoryCorrections - starting military tradition
+# SWE - Sweden
+# on top of the flat 25 every country gets in common/on_actions/
+# reason: Engelbrekt rebellion 1434-36
+
+add_army_tradition = 10

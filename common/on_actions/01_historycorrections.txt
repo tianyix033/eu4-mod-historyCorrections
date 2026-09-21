@@ -1,0 +1,20 @@
+# HistoryCorrections
+#
+# On Actions combine across files as of 1.36, so this adds to vanilla's
+# 00_on_actions.txt rather than replacing it.
+#
+# Baseline military tradition. Army and navy tradition pivot at 50 in
+# BaseModifiersTweaks, so a country at 0 carries the full penalty. Starting
+# everyone at 25 puts the median at the midpoint of the penalty half and lets
+# the game's own tradition gain carry them toward neutral.
+#
+# on_startup is country-scoped and fires once per country at game start.
+# Countries formed later start from 0, which is intended -- a newly proclaimed
+# state has no veterans.
+#
+# Countries with a war record get more on top of this, in history/countries/.
+
+on_startup = {
+	add_army_tradition = 25
+	add_navy_tradition = 25
+}

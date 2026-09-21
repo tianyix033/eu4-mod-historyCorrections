@@ -1,0 +1,6 @@
+# HistoryCorrections - starting military tradition
+# HUN - Hungary
+# on top of the flat 25 every country gets in common/on_actions/
+# reason: Nicopolis 1396 and the Ottoman frontier
+
+add_army_tradition = 20

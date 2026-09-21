@@ -1,0 +1,7 @@
+# HistoryCorrections - starting military tradition
+# ENG - England
+# on top of the flat 25 every country gets in common/on_actions/
+# reason: Hundred Years War
+
+add_army_tradition = 20
+add_navy_tradition = 15

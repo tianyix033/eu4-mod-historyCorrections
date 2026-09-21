@@ -1,0 +1,6 @@
+# HistoryCorrections - starting military tradition
+# WAL - Wallachia
+# on top of the flat 25 every country gets in common/on_actions/
+# reason: Ottoman frontier raiding
+
+add_army_tradition = 20

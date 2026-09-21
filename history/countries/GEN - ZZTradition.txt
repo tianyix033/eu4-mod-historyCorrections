@@ -1,0 +1,7 @@
+# HistoryCorrections - starting military tradition
+# GEN - Genoa
+# on top of the flat 25 every country gets in common/on_actions/
+# reason: War of Chioggia 1378-81, Genoese-Venetian wars
+
+add_army_tradition = 10
+add_navy_tradition = 25

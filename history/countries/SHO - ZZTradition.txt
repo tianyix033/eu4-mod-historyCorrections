@@ -1,0 +1,6 @@
+# HistoryCorrections - starting military tradition
+# SHO - Shoshone
+# on top of the flat 25 every country gets in common/on_actions/
+# reason: native
+
+add_army_tradition = 25

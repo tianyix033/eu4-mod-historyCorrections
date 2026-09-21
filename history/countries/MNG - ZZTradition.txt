@@ -1,0 +1,7 @@
+# HistoryCorrections - starting military tradition
+# MNG - Ming
+# on top of the flat 25 every country gets in common/on_actions/
+# reason: Yongle's Mongol campaigns 1410-1424
+
+add_army_tradition = 10
+add_navy_tradition = 10

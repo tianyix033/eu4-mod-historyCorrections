@@ -1,0 +1,6 @@
+# HistoryCorrections - starting military tradition
+# ALB - Albania
+# on top of the flat 25 every country gets in common/on_actions/
+# reason: Skanderbeg's revolt from 1443
+
+add_army_tradition = 20

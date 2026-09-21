@@ -1,0 +1,7 @@
+# HistoryCorrections - starting military tradition
+# BYZ - ByzantineEmpire
+# on top of the flat 25 every country gets in common/on_actions/
+# reason: under continuous Ottoman pressure
+
+add_army_tradition = 20
+add_navy_tradition = 20

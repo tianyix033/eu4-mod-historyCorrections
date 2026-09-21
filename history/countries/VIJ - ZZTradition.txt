@@ -1,0 +1,6 @@
+# HistoryCorrections - starting military tradition
+# VIJ - Vijayanagar
+# on top of the flat 25 every country gets in common/on_actions/
+# reason: continuous Vijayanagara-Bahmani wars
+
+add_army_tradition = 10

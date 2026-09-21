@@ -1,0 +1,6 @@
+# HistoryCorrections - starting military tradition
+# JNP - Jaunpur
+# on top of the flat 25 every country gets in common/on_actions/
+# reason: war recorded in history/wars around the start date
+
+add_army_tradition = 10

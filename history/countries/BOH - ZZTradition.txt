@@ -1,0 +1,6 @@
+# HistoryCorrections - starting military tradition
+# BOH - Bohemia
+# on top of the flat 25 every country gets in common/on_actions/
+# reason: Hussite Wars 1419-1434
+
+add_army_tradition = 10

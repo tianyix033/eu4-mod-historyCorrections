@@ -1,0 +1,6 @@
+# HistoryCorrections - starting military tradition
+# FRA - France
+# on top of the flat 25 every country gets in common/on_actions/
+# reason: Hundred Years War, truce of Tours 1444 but unresolved
+
+add_army_tradition = 20

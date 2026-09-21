@@ -1,0 +1,7 @@
+# HistoryCorrections - starting military tradition
+# MAM - Mameluks
+# on top of the flat 25 every country gets in common/on_actions/
+# reason: Mamluk campaigns in Syria and Cyprus
+
+add_army_tradition = 10
+add_navy_tradition = 10

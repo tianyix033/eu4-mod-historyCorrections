@@ -1,0 +1,7 @@
+# HistoryCorrections - starting military tradition
+# DAN - Denmark
+# on top of the flat 25 every country gets in common/on_actions/
+# reason: Kalmar Union conflicts
+
+add_army_tradition = 10
+add_navy_tradition = 15

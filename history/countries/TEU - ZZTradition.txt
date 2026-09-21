@@ -1,0 +1,6 @@
+# HistoryCorrections - starting military tradition
+# TEU - Teutonic Order
+# on top of the flat 25 every country gets in common/on_actions/
+# reason: Grunwald 1410
+
+add_army_tradition = 20
