@@ -1,0 +1,117 @@
+# HistoryCorrections
+#
+# National ideas for the Kazakh Khanate and the Zunghar (Dzungar) Khanate.
+#
+# Both tags ship with full histories and no ideas at all, so before this they
+# fell through to generic sets. Now that decisions/zz_horde_identities.txt can
+# actually form them, and the culture-shift events make that reachable, they
+# need something of their own - particularly for the later start dates, where
+# both were real powers rather than curiosities.
+#
+# File naming matters here. The engine assigns the first idea group a country
+# is eligible for, searching files alphabetically, so this sorts after
+# 00_country_ideas.txt but ahead of zz_group_ideas.txt and zzz_default_idea.txt
+# and therefore beats the generic fallback.
+#
+# This is a new file, not a copy of a vanilla one, so no @ markers are needed.
+
+KZH_ideas = {
+	start = {
+		cavalry_power = 0.15
+		manpower_recovery_speed = 0.10
+	}
+
+	bonus = {
+		land_forcelimit_modifier = 0.25
+	}
+
+	trigger = {
+		tag = KZH
+	}
+	free = yes
+
+	# The Senior, Middle and Junior Juz - the khanate was a confederation of
+	# three hordes, which cost it unity and gained it depth.
+	kzh_three_juz = {
+		global_manpower_modifier = 0.20
+	}
+	# Qasym Khan's Bright Path, the first codification of Kazakh customary law.
+	kzh_qasym_bright_path = {
+		stability_cost_modifier = -0.10
+	}
+	# Tauke Khan's Jeti Jarghy, the Seven Charters, c. 1680.
+	kzh_jeti_jarghy = {
+		global_unrest = -1
+	}
+	kzh_steppe_horsemen = {
+		cavalry_cost = -0.15
+		movement_speed = 0.05
+	}
+	# The caravan roads between Russia, Bukhara and the Qing.
+	kzh_caravan_roads = {
+		caravan_power = 0.20
+		trade_efficiency = 0.05
+	}
+	# Jailau and qystau - the seasonal pastures, and knowing which wells survive
+	# a hard winter. Armies that did not know them did not cross.
+	kzh_winter_pastures = {
+		land_attrition = -0.20
+		hostile_attrition = 0.5
+	}
+	# Aqtaban Shubyryndy, the Years of Great Distress, 1723 - the Zunghar
+	# invasion that nearly ended the khanate and did not.
+	kzh_years_of_distress = {
+		manpower_recovery_speed = 0.15
+		recover_army_morale_speed = 0.10
+	}
+}
+
+ZUN_ideas = {
+	start = {
+		artillery_power = 0.10
+		cavalry_power = 0.10
+	}
+
+	bonus = {
+		siege_ability = 0.10
+	}
+
+	trigger = {
+		tag = ZUN
+	}
+	free = yes
+
+	# Johan Gustaf Renat, a Swedish prisoner taken at Poltava and carried east,
+	# who cast cannon and taught musket-making on the Ili. The Zunghars were the
+	# only nomadic power to build a gunpowder industry of their own.
+	zun_renats_foundry = {
+		artillery_cost = -0.15
+	}
+	# Zamburak - swivel guns fired from the back of a kneeling camel.
+	zun_zamburak = {
+		cavalry_power = 0.10
+	}
+	# The Tarim oases: Kashgar, Yarkand, Khotan. Settled revenue under a horde.
+	zun_tarim_oases = {
+		global_tax_modifier = 0.15
+	}
+	# The Great Code of the Steppe, 1640, agreed between the Oirat princes.
+	zun_great_code = {
+		horde_unity = 1
+		global_unrest = -1
+	}
+	# Mines, smelters and irrigated fields in the Ili valley.
+	zun_mines_and_foundries = {
+		production_efficiency = 0.15
+	}
+	# Patrons of the Gelug, the Yellow Church, with a hand in every Lhasa
+	# succession.
+	zun_yellow_church = {
+		tolerance_own = 1
+		prestige = 1
+	}
+	# The last steppe empire, and it knew it.
+	zun_the_last_horde = {
+		land_forcelimit_modifier = 0.20
+	}
+}

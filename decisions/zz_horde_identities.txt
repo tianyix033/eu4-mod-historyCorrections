@@ -18,8 +18,10 @@
 # the Tarim oases, tibetan for the Khoshuud under Gushri Khan. Neither
 # combination exists in 1444; no horde starts with either culture.
 #
-# No ideagroups.1 swap is offered: none of these four tags has national ideas
-# of its own, so a swap could only move them off what they already hold.
+# Kazakh and Zunghar now have national ideas of their own, in
+# common/ideas/01_hc_horde_ideas.txt, so those two decisions offer the
+# ideagroups.1 swap. Khalkha and Khoshuud still have none, so a swap there
+# could only move them off what they already hold, and is not offered.
 
 country_decisions = {
 
@@ -45,6 +47,13 @@ country_decisions = {
 		effect = {
 			change_tag = KZH
 			add_prestige = 10
+			if = {
+				limit = {
+					has_custom_ideas = no
+					NOT = { has_idea_group = KZH_ideas }
+				}
+				country_event = { id = ideagroups.1 }	# Swap Ideas
+			}
 		}
 		ai_will_do = {
 			factor = 1
@@ -101,6 +110,13 @@ country_decisions = {
 		effect = {
 			change_tag = ZUN
 			add_prestige = 10
+			if = {
+				limit = {
+					has_custom_ideas = no
+					NOT = { has_idea_group = ZUN_ideas }
+				}
+				country_event = { id = ideagroups.1 }	# Swap Ideas
+			}
 		}
 		ai_will_do = {
 			factor = 1
