@@ -42,6 +42,7 @@ KZH_ideas = {
 	# Tauke Khan's Jeti Jarghy, the Seven Charters, c. 1680.
 	kzh_jeti_jarghy = {
 		global_unrest = -1
+		reform_progress_growth = 0.2
 	}
 	kzh_steppe_horsemen = {
 		cavalry_cost = -0.15
@@ -56,7 +57,7 @@ KZH_ideas = {
 	# a hard winter. Armies that did not know them did not cross.
 	kzh_winter_pastures = {
 		land_attrition = -0.20
-		hostile_attrition = 0.5
+		hostile_attrition = 1
 	}
 	# Aqtaban Shubyryndy, the Years of Great Distress, 1723 - the Zunghar
 	# invasion that nearly ended the khanate and did not.
@@ -69,11 +70,13 @@ KZH_ideas = {
 ZUN_ideas = {
 	start = {
 		artillery_power = 0.10
-		cavalry_power = 0.10
+		# cavalry_power = 0.10
+		ae_impact = -0.1
 	}
 
 	bonus = {
-		siege_ability = 0.10
+		#siege_ability = 0.10
+		province_warscore_cost = -0.15
 	}
 
 	trigger = {
@@ -89,7 +92,8 @@ ZUN_ideas = {
 	}
 	# Zamburak - swivel guns fired from the back of a kneeling camel.
 	zun_zamburak = {
-		cavalry_power = 0.10
+		# cavalry_power = 0.10
+		cavalry_fire = 1
 	}
 	# The Tarim oases: Kashgar, Yarkand, Khotan. Settled revenue under a horde.
 	zun_tarim_oases = {
