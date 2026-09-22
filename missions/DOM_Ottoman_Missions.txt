@@ -4503,7 +4503,12 @@ tur_persian_conquest = {
 		trigger = {
 			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
 				region = anatolia_region
-				value = 40
+				value = 36				#` was 40. anatolia_region is 48 provinces, six of them islands
+										#` (Cyprus, Rhodes, Chios, Lesbos, Naxos, Euboea) plus Adana, held by
+										#` Ramazan and often shielded by a Mamluk alliance. At 40 that left one
+										#` province of slack, so the Levant and Caucasus claims this mission
+										#` grants were gated behind naval wars the AI rarely wins. 36 lets it
+										#` skip the islands and turn south instead.
 			}
 		}
 		effect = {
