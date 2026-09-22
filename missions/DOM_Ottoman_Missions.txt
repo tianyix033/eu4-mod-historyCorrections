@@ -2400,7 +2400,10 @@ tur_egyptian_conquest = {
 		}
 
 		ai_weight = {
-			factor = 250
+			factor = 500				#` was 250, which is what all 75 missions in this file carry, so the
+									#` AI had no preference between the northern and southern branches.
+									#` This mission has no prerequisites and needs only six Levant provinces,
+									#` so weighting it is the most direct push toward Egypt.
 		}
 	}
 	
