@@ -1,0 +1,202 @@
+# HistoryCorrections
+#
+# Primary-culture shift for steppe hordes.
+#
+# Vanilla has culture_religion_events.22, which does exactly this, but it is
+# fired from on_bi_yearly_pulse at weight 125 out of 15950 across 159 events -
+# a 0.8% chance every two years - and then needs a foreign-cultured ruler whose
+# heir shares that culture, legitimacy 90 and stability 2, and then the AI
+# takes it 5% of the time (21% if the culture is already dominant). Compounded,
+# it never happens, which is why hordes never become Kazakh or Khalkha.
+#
+# These fire on territory instead of on dynasty, because that is what actually
+# changed: a horde becomes its subject people when it has nothing else left.
+# Two paths, either one sufficient:
+#
+#   A: hold 80% of the culture's provinces AND at most 3 of anything else
+#   B: hold 50% of the culture's provinces AND at most 1 of anything else
+#
+# Path B is the Khalkha case - Mongolia keeps its heartland and loses the rest.
+# Path A is the Khoshuud case - conquer Tibet, lose Dzungaria. Province counts
+# are from the 1444 map and hardcoded; cultures do move over a campaign, but
+# rarely enough that a static figure is the honest simplification.
+#
+# Checked against the 1444 start: no horde satisfies either path on day one.
+#
+# dominant_culture is deliberately NOT used. It is a plurality with no
+# threshold, so a culture at 35% can be 'dominant' and hordes would shift far
+# too readily.
+#
+# Cost is 15 prestige and nothing else. The manual button costs 100 diplomatic
+# power (PS_SET_PRIMARY_CULTURE) and no stability or legitimacy, so vanilla's
+# -2/-3 stability and -15/-30 legitimacy on event 22 is out of proportion.
+
+namespace = hc_culture_shift
+
+# Kazakh: 20 of the culture's provinces with <=3 others, or 13 with <=1.
+country_event = {
+	id = hc_culture_shift.1
+	title = hc_culture_shift.1.t
+	desc = hc_culture_shift.1.d
+	picture = BAD_WITH_MONARCH_eventPicture
+
+	trigger = {
+		OR = {
+			has_reform = steppe_horde
+			has_government_attribute = enables_horde_idea_group
+		}
+		NOT = { primary_culture = khazak }
+		OR = {
+			AND = {
+				num_of_owned_provinces_with = { culture = khazak  value = 20 }
+				NOT = { num_of_owned_provinces_with = { NOT = { culture = khazak }  value = 4 } }
+			}
+			AND = {
+				num_of_owned_provinces_with = { culture = khazak  value = 13 }
+				NOT = { num_of_owned_provinces_with = { NOT = { culture = khazak }  value = 2 } }
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 60
+	}
+
+	option = {
+		name = hc_culture_shift.1.a
+		ai_chance = { factor = 80 }
+		change_primary_culture = khazak
+		add_prestige = -15
+	}
+	option = {
+		name = hc_culture_shift.1.b
+		ai_chance = { factor = 20 }
+		add_prestige = 5
+	}
+}
+
+# Khalkha: 16 of the culture's provinces with <=3 others, or 10 with <=1.
+country_event = {
+	id = hc_culture_shift.2
+	title = hc_culture_shift.2.t
+	desc = hc_culture_shift.2.d
+	picture = BAD_WITH_MONARCH_eventPicture
+
+	trigger = {
+		OR = {
+			has_reform = steppe_horde
+			has_government_attribute = enables_horde_idea_group
+		}
+		NOT = { primary_culture = khalkha }
+		OR = {
+			AND = {
+				num_of_owned_provinces_with = { culture = khalkha  value = 16 }
+				NOT = { num_of_owned_provinces_with = { NOT = { culture = khalkha }  value = 4 } }
+			}
+			AND = {
+				num_of_owned_provinces_with = { culture = khalkha  value = 10 }
+				NOT = { num_of_owned_provinces_with = { NOT = { culture = khalkha }  value = 2 } }
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 60
+	}
+
+	option = {
+		name = hc_culture_shift.2.a
+		ai_chance = { factor = 80 }
+		change_primary_culture = khalkha
+		add_prestige = -15
+	}
+	option = {
+		name = hc_culture_shift.2.b
+		ai_chance = { factor = 20 }
+		add_prestige = 5
+	}
+}
+
+# Uyghur: 12 of the culture's provinces with <=3 others, or 7 with <=1.
+country_event = {
+	id = hc_culture_shift.3
+	title = hc_culture_shift.3.t
+	desc = hc_culture_shift.3.d
+	picture = BAD_WITH_MONARCH_eventPicture
+
+	trigger = {
+		OR = {
+			has_reform = steppe_horde
+			has_government_attribute = enables_horde_idea_group
+		}
+		NOT = { primary_culture = uyghur }
+		OR = {
+			AND = {
+				num_of_owned_provinces_with = { culture = uyghur  value = 12 }
+				NOT = { num_of_owned_provinces_with = { NOT = { culture = uyghur }  value = 4 } }
+			}
+			AND = {
+				num_of_owned_provinces_with = { culture = uyghur  value = 7 }
+				NOT = { num_of_owned_provinces_with = { NOT = { culture = uyghur }  value = 2 } }
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 60
+	}
+
+	option = {
+		name = hc_culture_shift.3.a
+		ai_chance = { factor = 80 }
+		change_primary_culture = uyghur
+		add_prestige = -15
+	}
+	option = {
+		name = hc_culture_shift.3.b
+		ai_chance = { factor = 20 }
+		add_prestige = 5
+	}
+}
+
+# Tibetan: 19 of the culture's provinces with <=3 others, or 12 with <=1.
+country_event = {
+	id = hc_culture_shift.4
+	title = hc_culture_shift.4.t
+	desc = hc_culture_shift.4.d
+	picture = BAD_WITH_MONARCH_eventPicture
+
+	trigger = {
+		OR = {
+			has_reform = steppe_horde
+			has_government_attribute = enables_horde_idea_group
+		}
+		NOT = { primary_culture = tibetan }
+		OR = {
+			AND = {
+				num_of_owned_provinces_with = { culture = tibetan  value = 19 }
+				NOT = { num_of_owned_provinces_with = { NOT = { culture = tibetan }  value = 4 } }
+			}
+			AND = {
+				num_of_owned_provinces_with = { culture = tibetan  value = 12 }
+				NOT = { num_of_owned_provinces_with = { NOT = { culture = tibetan }  value = 2 } }
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 60
+	}
+
+	option = {
+		name = hc_culture_shift.4.a
+		ai_chance = { factor = 80 }
+		change_primary_culture = tibetan
+		add_prestige = -15
+	}
+	option = {
+		name = hc_culture_shift.4.b
+		ai_chance = { factor = 20 }
+		add_prestige = 5
+	}
+}
