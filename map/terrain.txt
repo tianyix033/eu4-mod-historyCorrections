@@ -528,6 +528,7 @@ categories =  {
 
 		movement_cost = 1.05
 		supply_limit = 4
+		local_hostile_attrition = 2			#@ new. Supply limit here is only 4 to begin with.
 		local_development_cost = 0.50
 		nation_designer_cost_multiplier = 0.8
 		
@@ -559,6 +560,7 @@ categories =  {
 		local_development_cost = 0.35
 		nation_designer_cost_multiplier = 0.9		
 		supply_limit = 4
+		local_hostile_attrition = 2			#@ new. Same reasoning as desert.
 
 		terrain_override = {
 			792 793 796 805 806 2821 2822 2840 2841
@@ -761,6 +763,8 @@ categories =  {
 		local_development_cost = 0.20
 		nation_designer_cost_multiplier = 0.9	
 		supply_limit = 6
+		local_hostile_attrition = 2			#@ new. The steppe is hard to campaign in, not hard to live in. 68 of the
+										#@ 111 horde-held provinces at the 1444 start are this terrain.
 		
 		terrain_override = {
 			2195 463 2197 2417 466 2367 470 472 2353 2369 2358 476 2354 479 2357 1966 2420
