@@ -5,15 +5,17 @@ graphical_culture = asiangfx
 color = { 140  169  183 }
 revolutionary_colors = { 15 0 15 }
 
+#@ historical_idea_groups rewritten. Vanilla order was:
+#@   defensive trade offensive spy economic quality administrative diplomatic
 historical_idea_groups = {
-	defensive_ideas
-	trade_ideas
-	offensive_ideas
-	spy_ideas
-	economic_ideas
-	quality_ideas
-	administrative_ideas
-	diplomatic_ideas
+	quantity_ideas		#@ was defensive_ideas
+	offensive_ideas		#@ was trade_ideas
+	administrative_ideas		#@ was offensive_ideas
+	economic_ideas		#@ was spy_ideas
+	defensive_ideas		#@ was economic_ideas
+	trade_ideas		#@ was quality_ideas
+	diplomatic_ideas		#@ was administrative_ideas
+	quality_ideas		#@ was diplomatic_ideas
 }
 
 historical_units = {

@@ -9,15 +9,17 @@ color = { 144  60  75 }
 
 revolutionary_colors = { 1 8 5 }
 
+#@ historical_idea_groups rewritten. Vanilla order was:
+#@   defensive religious trade economic plutocracy diplomatic offensive spy
 historical_idea_groups = {
-	defensive_ideas
-	religious_ideas
-	trade_ideas
-	economic_ideas
-	plutocracy_ideas
-	diplomatic_ideas
-	offensive_ideas
-	spy_ideas
+	expansion_ideas		#@ was defensive_ideas
+	defensive_ideas		#@ was religious_ideas
+	religious_ideas		#@ was trade_ideas
+	trade_ideas		#@ was economic_ideas
+	economic_ideas		#@ was plutocracy_ideas
+	plutocracy_ideas		#@ was diplomatic_ideas
+	diplomatic_ideas		#@ was offensive_ideas
+	offensive_ideas		#@ was spy_ideas
 }
 
 historical_units = {

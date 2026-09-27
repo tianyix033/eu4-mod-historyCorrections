@@ -6,14 +6,16 @@ color = { 197  92  106 }
 
 revolutionary_colors = { 5  0  5 }
 
+#@ historical_idea_groups rewritten. Vanilla order was:
+#@   diplomatic humanist trade offensive administrative defensive aristocracy quality
 historical_idea_groups = {
 	diplomatic_ideas
-	humanist_ideas	
-	trade_ideas
-	offensive_ideas
+	humanist_ideas
+	aristocracy_ideas		#@ was trade_ideas
+	trade_ideas		#@ was offensive_ideas
 	administrative_ideas
-	defensive_ideas
-	aristocracy_ideas	
+	offensive_ideas		#@ was defensive_ideas
+	defensive_ideas		#@ was aristocracy_ideas
 	quality_ideas
 }
 

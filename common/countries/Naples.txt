@@ -7,15 +7,17 @@ revolutionary_colors = { 15  6  16 } #Parthenopean Republic
 
 historical_score = 120
 
+#@ historical_idea_groups rewritten. Vanilla order was:
+#@   trade quantity economic maritime defensive innovativeness offensive quality
 historical_idea_groups = {
 	trade_ideas
-	quantity_ideas
-	economic_ideas
-	maritime_ideas
-	defensive_ideas
-	innovativeness_ideas
-	offensive_ideas
-	quality_ideas
+	mercenary_ideas		#@ was quantity_ideas
+	quantity_ideas		#@ was economic_ideas
+	economic_ideas		#@ was maritime_ideas
+	maritime_ideas		#@ was defensive_ideas
+	defensive_ideas		#@ was innovativeness_ideas
+	innovativeness_ideas		#@ was offensive_ideas
+	offensive_ideas		#@ was quality_ideas
 }
 
 historical_units = {

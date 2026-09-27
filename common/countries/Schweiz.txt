@@ -8,15 +8,17 @@ revolutionary_colors = { 9  5  8 } #Helvetian Republic
 
 preferred_religion = reformed
 
+#@ historical_idea_groups rewritten. Vanilla order was:
+#@   administrative plutocracy trade defensive economic expansion quality innovativeness
 historical_idea_groups = {
 	administrative_ideas
-	plutocracy_ideas
-	trade_ideas
-	defensive_ideas
-	economic_ideas
-	expansion_ideas
-	quality_ideas
-	innovativeness_ideas
+	mercenary_ideas		#@ was plutocracy_ideas
+	plutocracy_ideas		#@ was trade_ideas
+	trade_ideas		#@ was defensive_ideas
+	defensive_ideas		#@ was economic_ideas
+	economic_ideas		#@ was expansion_ideas
+	expansion_ideas		#@ was quality_ideas
+	quality_ideas		#@ was innovativeness_ideas
 }
 
 historical_units = {

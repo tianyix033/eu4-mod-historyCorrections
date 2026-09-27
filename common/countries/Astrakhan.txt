@@ -6,15 +6,17 @@ color = { 26  27  154 }
 
 revolutionary_colors = { 15 8 15 }
 
+#@ historical_idea_groups rewritten. Vanilla order was:
+#@   defensive offensive trade spy diplomatic administrative religious economic
 historical_idea_groups = {
-	defensive_ideas
-	offensive_ideas
-	trade_ideas
-	spy_ideas
-	diplomatic_ideas
-	administrative_ideas
-	religious_ideas
-	economic_ideas
+	horde_gov_ideas		#@ was defensive_ideas
+	defensive_ideas		#@ was offensive_ideas
+	offensive_ideas		#@ was trade_ideas
+	trade_ideas		#@ was spy_ideas
+	spy_ideas		#@ was diplomatic_ideas
+	diplomatic_ideas		#@ was administrative_ideas
+	administrative_ideas		#@ was religious_ideas
+	religious_ideas		#@ was economic_ideas
 }
 
 historical_units = {

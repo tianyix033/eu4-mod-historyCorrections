@@ -8,15 +8,17 @@ revolutionary_colors = { 5  9  5 } #Ottoman Civil Ensign
 
 historical_score = 5500
 
+#@ historical_idea_groups rewritten. Vanilla order was:
+#@   humanist trade offensive administrative quantity influence quality innovativeness
 historical_idea_groups = {
-	humanist_ideas
-	trade_ideas
-	offensive_ideas
-	administrative_ideas
-	quantity_ideas
+	offensive_ideas		#@ was humanist_ideas
+	administrative_ideas		#@ was trade_ideas
+	humanist_ideas		#@ was offensive_ideas
+	quantity_ideas		#@ was administrative_ideas
+	naval_ideas		#@ was quantity_ideas
 	influence_ideas
-	quality_ideas
-	innovativeness_ideas
+	court_ideas		#@ was quality_ideas
+	defensive_ideas		#@ was innovativeness_ideas
 }
 
 historical_units = {

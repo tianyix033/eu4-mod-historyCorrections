@@ -49,7 +49,9 @@ categories =  {
 		movement_cost = 1.25
 		supply_limit = 2		
 		local_development_cost = 0.5
-		nation_designer_cost_multiplier = 0.75		
+		nation_designer_cost_multiplier = 0.75
+		local_hostile_attrition = 2		#@ new
+		attrition = 3				#@ new		
 		
 		terrain_override = {		
 			1034 1035 1104 1105 2074 2128 2129 2025 2440 2574
@@ -313,6 +315,8 @@ categories =  {
 		local_development_cost = 0.35
 		nation_designer_cost_multiplier = 0.75
 		supply_limit = 4
+		attrition = 2					#@ new
+		local_hostile_attrition = 2		#@ new
 		
 		terrain_override = {
 			210	226 # Spain
@@ -528,6 +532,7 @@ categories =  {
 
 		movement_cost = 1.05
 		supply_limit = 4
+		attrition = 3						#@ new
 		local_hostile_attrition = 2			#@ new. Supply limit here is only 4 to begin with.
 		local_development_cost = 0.50
 		nation_designer_cost_multiplier = 0.8
@@ -560,6 +565,7 @@ categories =  {
 		local_development_cost = 0.35
 		nation_designer_cost_multiplier = 0.9		
 		supply_limit = 4
+		attrition = 3						#@ new
 		local_hostile_attrition = 2			#@ new. Same reasoning as desert.
 
 		terrain_override = {
@@ -627,6 +633,7 @@ categories =  {
 		nation_designer_cost_multiplier = 0.95
 		supply_limit = 7
 		allowed_num_of_buildings = 1
+		attrition = 1				#@ new
 
 		terrain_override = {
 			1749 224
@@ -675,7 +682,8 @@ categories =  {
 		defence = 1
 		local_defensiveness = 0.1
 		local_development_cost = 0.2
-		nation_designer_cost_multiplier = 0.9	
+		nation_designer_cost_multiplier = 0.9
+		attrition = 1				#@ new	
 
 		terrain_override = {
 			520 536 542 544 578 2035 2077 2079 2085 2087 2093

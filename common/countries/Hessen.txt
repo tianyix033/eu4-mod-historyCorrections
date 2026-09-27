@@ -5,15 +5,17 @@ graphical_culture = westerngfx
 color = { 114  171  184 }
 revolutionary_colors = { 15 0 5 }
 
+#@ historical_idea_groups rewritten. Vanilla order was:
+#@   trade defensive religious economic diplomatic spy offensive innovativeness
 historical_idea_groups = {
 	trade_ideas
-	defensive_ideas
-	religious_ideas
-	economic_ideas
-	diplomatic_ideas
-	spy_ideas
-	offensive_ideas
-	innovativeness_ideas
+	mercenary_ideas		#@ was defensive_ideas
+	defensive_ideas		#@ was religious_ideas
+	religious_ideas		#@ was economic_ideas
+	economic_ideas		#@ was diplomatic_ideas
+	diplomatic_ideas		#@ was spy_ideas
+	spy_ideas		#@ was offensive_ideas
+	offensive_ideas		#@ was innovativeness_ideas
 }
 
 historical_units = {

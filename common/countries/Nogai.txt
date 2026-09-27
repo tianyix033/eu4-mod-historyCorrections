@@ -5,15 +5,17 @@ graphical_culture = muslimgfx
 color = { 0 120 145 }
 revolutionary_colors = { 10 0 8 }
 
+#@ historical_idea_groups rewritten. Vanilla order was:
+#@   religious trade quantity expansion offensive economic defensive administrative
 historical_idea_groups = {
-	religious_ideas
-	trade_ideas
-	quantity_ideas
-	expansion_ideas
-	offensive_ideas
-	economic_ideas
-	defensive_ideas
-	administrative_ideas
+	horde_gov_ideas		#@ was religious_ideas
+	religious_ideas		#@ was trade_ideas
+	trade_ideas		#@ was quantity_ideas
+	quantity_ideas		#@ was expansion_ideas
+	expansion_ideas		#@ was offensive_ideas
+	offensive_ideas		#@ was economic_ideas
+	economic_ideas		#@ was defensive_ideas
+	defensive_ideas		#@ was administrative_ideas
 }
 
 historical_units = {

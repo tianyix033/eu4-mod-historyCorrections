@@ -7,13 +7,15 @@ revolutionary_colors = { 9 8 5 }
 
 historical_score = 4700
 
+#@ historical_idea_groups rewritten. Vanilla order was:
+#@   exploration expansion offensive religious economic maritime quality defensive
 historical_idea_groups = {
 	exploration_ideas
 	expansion_ideas
-	offensive_ideas
+	naval_ideas		#@ was offensive_ideas
 	religious_ideas
-	economic_ideas
-	maritime_ideas
+	maritime_ideas		#@ was economic_ideas
+	economic_ideas		#@ was maritime_ideas
 	quality_ideas
 	defensive_ideas
 }

@@ -8,15 +8,17 @@ random_nation_chance = 0
 color = { 139  179  207 }
 revolutionary_colors = { 13 0 4 }
 
+#@ historical_idea_groups rewritten. Vanilla order was:
+#@   defensive spy trade offensive diplomatic innovativeness economic religious
 historical_idea_groups = {
-	defensive_ideas
-	spy_ideas
-	trade_ideas
-	offensive_ideas
-	diplomatic_ideas
-	innovativeness_ideas
-	economic_ideas
-	religious_ideas
+	expansion_ideas		#@ was defensive_ideas
+	defensive_ideas		#@ was spy_ideas
+	spy_ideas		#@ was trade_ideas
+	trade_ideas		#@ was offensive_ideas
+	offensive_ideas		#@ was diplomatic_ideas
+	diplomatic_ideas		#@ was innovativeness_ideas
+	innovativeness_ideas		#@ was economic_ideas
+	economic_ideas		#@ was religious_ideas
 }
 
 historical_units = {

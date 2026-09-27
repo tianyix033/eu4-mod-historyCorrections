@@ -7,15 +7,17 @@ revolutionary_colors = { 9  8  9 }
 
 historical_score = 450
 
+#@ historical_idea_groups rewritten. Vanilla order was:
+#@   humanist defensive trade economic offensive maritime administrative quantity
 historical_idea_groups = {
-	humanist_ideas
-	defensive_ideas
-	trade_ideas
-	economic_ideas
-	offensive_ideas
-	maritime_ideas
-	administrative_ideas
-	quantity_ideas
+	defensive_ideas		#@ was humanist_ideas
+	diplomatic_ideas		#@ was defensive_ideas
+	spy_ideas		#@ was trade_ideas
+	administrative_ideas		#@ was economic_ideas
+	quantity_ideas		#@ was offensive_ideas
+	quality_ideas		#@ was maritime_ideas
+	court_ideas		#@ was administrative_ideas
+	trade_ideas		#@ was quantity_ideas
 }
 
 historical_units = {

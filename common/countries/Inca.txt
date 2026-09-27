@@ -5,15 +5,17 @@ graphical_culture = southamericagfx
 color = { 125  92  110 }
 revolutionary_colors = { 5 0 5 }
 
+#@ historical_idea_groups rewritten. Vanilla order was:
+#@   economic defensive trade religious offensive maritime spy quantity
 historical_idea_groups = {
-	economic_ideas
-	defensive_ideas
-	trade_ideas
-	religious_ideas
-	offensive_ideas
-	maritime_ideas
-	spy_ideas
-	quantity_ideas
+	expansion_ideas		#@ was economic_ideas
+	economic_ideas		#@ was defensive_ideas
+	defensive_ideas		#@ was trade_ideas
+	trade_ideas		#@ was religious_ideas
+	religious_ideas		#@ was offensive_ideas
+	offensive_ideas		#@ was maritime_ideas
+	maritime_ideas		#@ was spy_ideas
+	spy_ideas		#@ was quantity_ideas
 }
 
 historical_units = {

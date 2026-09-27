@@ -8,15 +8,17 @@ revolutionary_colors = { 5  8  1 } #Inspired by the Five Color Flag
 
 historical_score = 1300
 
+#@ historical_idea_groups rewritten. Vanilla order was:
+#@   trade economic defensive administrative humanist quantity influence offensive
 historical_idea_groups = {
-	trade_ideas
-	economic_ideas
+	court_ideas		#@ was trade_ideas
+	administrative_ideas		#@ was economic_ideas
 	defensive_ideas
-	administrative_ideas
-	humanist_ideas
-	quantity_ideas
-	influence_ideas
-	offensive_ideas
+	infrastructure_ideas		#@ was administrative_ideas
+	diplomatic_ideas		#@ was humanist_ideas
+	economic_ideas		#@ was quantity_ideas
+	humanist_ideas		#@ was influence_ideas
+	maritime_ideas		#@ was offensive_ideas
 }
 
 historical_units = {

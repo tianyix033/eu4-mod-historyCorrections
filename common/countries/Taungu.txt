@@ -6,15 +6,17 @@ special_unit_culture = south_east_asian_special
 color = { 232 214 9 }
 revolutionary_colors = { 8  9  5 }
 
+#@ historical_idea_groups rewritten. Vanilla order was:
+#@   defensive offensive trade diplomatic economic administrative religious spy
 historical_idea_groups = {
-	defensive_ideas
-	offensive_ideas
-	trade_ideas
+	quality_ideas		#@ was defensive_ideas
+	administrative_ideas		#@ was offensive_ideas
+	offensive_ideas		#@ was trade_ideas
 	diplomatic_ideas
-	economic_ideas
-	administrative_ideas
-	religious_ideas
-	spy_ideas
+	court_ideas		#@ was economic_ideas
+	influence_ideas		#@ was administrative_ideas
+	economic_ideas		#@ was religious_ideas
+	defensive_ideas		#@ was spy_ideas
 }
 
 historical_units = {

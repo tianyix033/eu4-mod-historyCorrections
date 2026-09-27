@@ -8,15 +8,17 @@ revolutionary_colors = { 0 5 0 }
 
 historical_score = 850
 
+#@ historical_idea_groups rewritten. Vanilla order was:
+#@   trade plutocracy administrative maritime innovativeness defensive economic quality
 historical_idea_groups = {
 	trade_ideas
-	plutocracy_ideas
-	administrative_ideas
-	maritime_ideas
-	innovativeness_ideas
-	defensive_ideas
-	economic_ideas
-	quality_ideas
+	naval_ideas		#@ was plutocracy_ideas
+	mercenary_ideas		#@ was administrative_ideas
+	plutocracy_ideas		#@ was maritime_ideas
+	administrative_ideas		#@ was innovativeness_ideas
+	maritime_ideas		#@ was defensive_ideas
+	innovativeness_ideas		#@ was economic_ideas
+	defensive_ideas		#@ was quality_ideas
 }
 
 historical_units = {

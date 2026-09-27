@@ -9,13 +9,15 @@ random_nation_chance = 0
 
 historical_score = 500
 
+#@ historical_idea_groups rewritten. Vanilla order was:
+#@   economic quality expansion offensive administrative maritime trade defensive
 historical_idea_groups = {
-	economic_ideas
-	quality_ideas
-	expansion_ideas
-	offensive_ideas
-	administrative_ideas
-	maritime_ideas
+	quality_ideas		#@ was economic_ideas
+	economic_ideas		#@ was quality_ideas
+	court_ideas		#@ was expansion_ideas
+	administrative_ideas		#@ was offensive_ideas
+	offensive_ideas		#@ was administrative_ideas
+	expansion_ideas		#@ was maritime_ideas
 	trade_ideas
 	defensive_ideas
 }

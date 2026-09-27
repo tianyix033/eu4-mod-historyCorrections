@@ -6,15 +6,17 @@ color = { 166  108  146 }
 
 revolutionary_colors = { 9  0  5 } #Cisalpine Republic
 
-historical_idea_groups = {	
+#@ historical_idea_groups rewritten. Vanilla order was:
+#@   innovativeness defensive diplomatic administrative quality trade offensive economic
+historical_idea_groups = {
 	innovativeness_ideas
-	defensive_ideas
-	diplomatic_ideas
-	administrative_ideas
-	quality_ideas
-	trade_ideas
-	offensive_ideas
-	economic_ideas	
+	mercenary_ideas		#@ was defensive_ideas
+	defensive_ideas		#@ was diplomatic_ideas
+	diplomatic_ideas		#@ was administrative_ideas
+	administrative_ideas		#@ was quality_ideas
+	quality_ideas		#@ was trade_ideas
+	trade_ideas		#@ was offensive_ideas
+	offensive_ideas		#@ was economic_ideas
 }
 
 historical_units = {

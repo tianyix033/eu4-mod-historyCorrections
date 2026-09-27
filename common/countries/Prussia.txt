@@ -11,15 +11,17 @@ historical_score = 1800
 
 preferred_religion = protestant
 
+#@ historical_idea_groups rewritten. Vanilla order was:
+#@   innovativeness offensive diplomatic quality economic trade defensive administrative
 historical_idea_groups = {
-	innovativeness_ideas
+	quality_ideas		#@ was innovativeness_ideas
 	offensive_ideas
-	diplomatic_ideas
-	quality_ideas
+	aristocracy_ideas		#@ was diplomatic_ideas
+	administrative_ideas		#@ was quality_ideas
 	economic_ideas
-	trade_ideas
-	defensive_ideas
-	administrative_ideas
+	diplomatic_ideas		#@ was trade_ideas
+	trade_ideas		#@ was defensive_ideas
+	innovativeness_ideas		#@ was administrative_ideas
 }
 
 historical_units = {

@@ -6,15 +6,17 @@ color = { 149 45 102 }
 
 revolutionary_colors = { 2 3 2 } #purple \o/
 
+#@ historical_idea_groups rewritten. Vanilla order was:
+#@   maritime religious defensive administrative trade quality innovativeness diplomatic
 historical_idea_groups = {
-	maritime_ideas
-	religious_ideas
-	defensive_ideas
-	administrative_ideas
-	trade_ideas
-	quality_ideas
-	innovativeness_ideas
-	diplomatic_ideas
+	defensive_ideas		#@ was maritime_ideas
+	mercenary_ideas		#@ was religious_ideas
+	court_ideas		#@ was defensive_ideas
+	religious_ideas		#@ was administrative_ideas
+	administrative_ideas		#@ was trade_ideas
+	trade_ideas		#@ was quality_ideas
+	maritime_ideas		#@ was innovativeness_ideas
+	spy_ideas		#@ was diplomatic_ideas
 }
 
 historical_units = {

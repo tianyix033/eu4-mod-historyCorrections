@@ -6,15 +6,17 @@ cannot_form_from_collapse_nation = yes
 color = { 94  136  191 }
 revolutionary_colors = { 0 13 8 }
 
+#@ historical_idea_groups rewritten. Vanilla order was:
+#@   religious defensive offensive maritime trade spy diplomatic economic
 historical_idea_groups = {
-	religious_ideas
-	defensive_ideas
-	offensive_ideas
-	maritime_ideas
-	trade_ideas
-	spy_ideas
-	diplomatic_ideas
-	economic_ideas
+	expansion_ideas		#@ was religious_ideas
+	religious_ideas		#@ was defensive_ideas
+	defensive_ideas		#@ was offensive_ideas
+	offensive_ideas		#@ was maritime_ideas
+	maritime_ideas		#@ was trade_ideas
+	trade_ideas		#@ was spy_ideas
+	spy_ideas		#@ was diplomatic_ideas
+	diplomatic_ideas		#@ was economic_ideas
 }
 
 historical_units = {
