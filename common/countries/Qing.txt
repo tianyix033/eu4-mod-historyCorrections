@@ -11,14 +11,20 @@ historical_score = 350
 #@ historical_idea_groups rewritten. Vanilla order was:
 #@   trade economic defensive expansion humanist quantity influence offensive
 historical_idea_groups = {
-	horde_gov_ideas		#@ was trade_ideas
-	administrative_ideas		#@ was economic_ideas
-	diplomatic_ideas		#@ was defensive_ideas
-	quality_ideas		#@ was expansion_ideas
-	quantity_ideas		#@ was humanist_ideas
-	humanist_ideas		#@ was quantity_ideas
-	court_ideas		#@ was influence_ideas
-	economic_ideas		#@ was offensive_ideas
+	horde_gov_ideas		#@ was administrative_ideas
+	administrative_ideas		#@ was humanist_ideas
+	quantity_ideas
+	economic_ideas
+	humanist_ideas		#@ was trade_ideas
+	offensive_ideas		#@ was expansion_ideas
+	court_ideas
+	infrastructure_ideas
+
+	#trade_ideas		#@ was quantity_ideas
+	#quantity_ideas		#@ was offensive_ideas
+
+	#expansion_ideas		#@ was economic_ideas
+	#economic_ideas		#@ was defensive_ideas
 }
 
 historical_units = {

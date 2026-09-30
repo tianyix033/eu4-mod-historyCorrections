@@ -10,13 +10,15 @@ revolutionary_colors = { 5  0  5 }
 #@   diplomatic humanist trade offensive administrative defensive aristocracy quality
 historical_idea_groups = {
 	diplomatic_ideas
-	humanist_ideas
+	innovativeness_ideas
 	aristocracy_ideas		#@ was trade_ideas
-	trade_ideas		#@ was offensive_ideas
+	economic_ideas
+	# trade_ideas		#@ was offensive_ideas
 	administrative_ideas
-	offensive_ideas		#@ was defensive_ideas
 	defensive_ideas		#@ was aristocracy_ideas
-	quality_ideas
+	offensive_ideas		#@ was defensive_ideas
+	infrastructure_ideas	
+	#quality_ideas
 }
 
 historical_units = {

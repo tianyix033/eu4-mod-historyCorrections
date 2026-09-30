@@ -10,13 +10,15 @@ revolutionary_colors = { 0  13  5 }
 #@   religious exploration defensive trade offensive maritime economic quality
 historical_idea_groups = {
 	religious_ideas
-	exploration_ideas
+	# exploration_ideas
+	quantity_ideas
+	diplomatic_ideas
 	defensive_ideas
 	trade_ideas
 	offensive_ideas
 	spy_ideas		#@ was maritime_ideas
 	economic_ideas
-	quality_ideas
+	#quality_ideas
 }
 
 historical_units = {

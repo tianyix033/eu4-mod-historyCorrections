@@ -13,8 +13,9 @@ historical_idea_groups = {
 	trade_ideas		#@ was quantity_ideas
 	quantity_ideas		#@ was offensive_ideas
 	offensive_ideas		#@ was expansion_ideas
-	expansion_ideas		#@ was economic_ideas
+	# expansion_ideas		#@ was economic_ideas
 	economic_ideas		#@ was defensive_ideas
+	diplomatic_ideas
 	defensive_ideas		#@ was administrative_ideas
 }
 

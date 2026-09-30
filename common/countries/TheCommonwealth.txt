@@ -10,14 +10,16 @@ historical_score = 1500
 #@ historical_idea_groups rewritten. Vanilla order was:
 #@   diplomatic humanist trade offensive administrative defensive aristocracy quality
 historical_idea_groups = {
-	aristocracy_ideas		#@ was diplomatic_ideas
-	influence_ideas		#@ was humanist_ideas
-	diplomatic_ideas		#@ was trade_ideas
-	humanist_ideas		#@ was offensive_ideas
-	trade_ideas		#@ was administrative_ideas
-	defensive_ideas
-	quantity_ideas		#@ was aristocracy_ideas
-	administrative_ideas		#@ was quality_ideas
+	diplomatic_ideas
+	innovativeness_ideas
+	aristocracy_ideas		#@ was trade_ideas
+	economic_ideas
+	# trade_ideas		#@ was offensive_ideas
+	administrative_ideas
+	defensive_ideas		#@ was aristocracy_ideas
+	offensive_ideas		#@ was defensive_ideas
+	infrastructure_ideas	
+	#quality_ideas
 }
 
 historical_units = {

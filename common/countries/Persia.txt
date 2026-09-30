@@ -10,12 +10,13 @@ revolutionary_colors = { 10  0  5 }
 #@   defensive religious offensive trade spy economic diplomatic administrative
 historical_idea_groups = {
 	offensive_ideas		#@ was defensive_ideas
-	spy_ideas		#@ was religious_ideas
+	#spy_ideas		#@ was religious_ideas
 	administrative_ideas		#@ was offensive_ideas
-	defensive_ideas		#@ was trade_ideas
 	religious_ideas		#@ was spy_ideas
+	defensive_ideas		#@ was trade_ideas	
 	trade_ideas		#@ was economic_ideas
 	infrastructure_ideas		#@ was diplomatic_ideas
+	quality_ideas
 	economic_ideas		#@ was administrative_ideas
 }
 

@@ -10,12 +10,18 @@ revolutionary_colors = { 6 1 6 }
 historical_idea_groups = {
 	horde_gov_ideas		#@ was administrative_ideas
 	administrative_ideas		#@ was humanist_ideas
-	diplomatic_ideas		#@ was trade_ideas
-	quality_ideas		#@ was quantity_ideas
-	quantity_ideas		#@ was offensive_ideas
-	humanist_ideas		#@ was expansion_ideas
-	court_ideas		#@ was economic_ideas
-	economic_ideas		#@ was defensive_ideas
+	quantity_ideas
+	economic_ideas
+	humanist_ideas		#@ was trade_ideas
+	offensive_ideas		#@ was expansion_ideas
+	court_ideas
+	infrastructure_ideas
+
+	#trade_ideas		#@ was quantity_ideas
+	#quantity_ideas		#@ was offensive_ideas
+
+	#expansion_ideas		#@ was economic_ideas
+	#economic_ideas		#@ was defensive_ideas
 }
 
 historical_units = {

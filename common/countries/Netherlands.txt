@@ -13,11 +13,13 @@ preferred_religion = reformed
 historical_idea_groups = {
 	defensive_ideas		#@ was administrative_ideas
 	trade_ideas		#@ was exploration_ideas
-	exploration_ideas		#@ was defensive_ideas
-	quantity_ideas		#@ was maritime_ideas
 	infrastructure_ideas		#@ was innovativeness_ideas
+	exploration_ideas		#@ was defensive_ideas
+	# quantity_ideas		#@ was maritime_ideas
+	
 	maritime_ideas		#@ was quality_ideas
 	economic_ideas		#@ was trade_ideas
+	quantity_ideas
 	diplomatic_ideas		#@ was economic_ideas
 }
 

@@ -14,9 +14,11 @@ historical_idea_groups = {
 	court_ideas		#@ was trade_ideas
 	administrative_ideas		#@ was economic_ideas
 	defensive_ideas
-	infrastructure_ideas		#@ was administrative_ideas
-	diplomatic_ideas		#@ was humanist_ideas
+	# infrastructure_ideas		#@ was administrative_ideas
 	economic_ideas		#@ was quantity_ideas
+	quantity_ideas
+	innovativeness_ideas
+	# diplomatic_ideas		#@ was humanist_ideas
 	humanist_ideas		#@ was influence_ideas
 	maritime_ideas		#@ was offensive_ideas
 }

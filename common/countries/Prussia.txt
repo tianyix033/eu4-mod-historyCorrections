@@ -14,14 +14,14 @@ preferred_religion = protestant
 #@ historical_idea_groups rewritten. Vanilla order was:
 #@   innovativeness offensive diplomatic quality economic trade defensive administrative
 historical_idea_groups = {
-	quality_ideas		#@ was innovativeness_ideas
-	offensive_ideas
-	aristocracy_ideas		#@ was diplomatic_ideas
-	administrative_ideas		#@ was quality_ideas
+	diplomatic_ideas
+	quantity_ideas
+	spy_ideas
 	economic_ideas
-	diplomatic_ideas		#@ was trade_ideas
-	trade_ideas		#@ was defensive_ideas
-	innovativeness_ideas		#@ was administrative_ideas
+	administrative_ideas
+	offensive_ideas
+	trade_ideas
+	defensive_ideas
 }
 
 historical_units = {

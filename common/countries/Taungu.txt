@@ -9,7 +9,7 @@ revolutionary_colors = { 8  9  5 }
 #@ historical_idea_groups rewritten. Vanilla order was:
 #@   defensive offensive trade diplomatic economic administrative religious spy
 historical_idea_groups = {
-	quality_ideas		#@ was defensive_ideas
+	quantity_ideas		#@ was defensive_ideas
 	administrative_ideas		#@ was offensive_ideas
 	offensive_ideas		#@ was trade_ideas
 	diplomatic_ideas
