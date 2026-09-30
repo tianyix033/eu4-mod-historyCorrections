@@ -14,13 +14,13 @@ vassal = {
 
 # Habsburg - Silesia
 vassal = {
-	first = HAB
+	first = BOH						#@ was HAB. Silesian duchies were vassals of the Bohemian crown
 	second = GLG
 	start_date = 1526.8.30
 	end_date = 1675.11.21
 }
 vassal = {
-	first = HAB
+	first = BOH						#@ was HAB. Silesian duchies were vassals of the Bohemian crown
 	second = OPL
 	start_date = 1526.8.30
 	end_date = 1675.11.21
@@ -106,13 +106,40 @@ union = {
 	end_date = 1444.11.11
 }
 
-# Bohemia-Hungary
+# Bohemia-Hungary, the Jagiellonian union, ends when Louis II dies at Mohacs
 union = {
 	first = BOH
 	second = HUN
 	start_date = 1490.1.1
+	end_date = 1526.8.29				#@ was 1618.1.1. Superseded by the two Habsburg unions below
+}
+
+#@ new. Habsburg-Bohemia. Ferdinand I was elected King of Bohemia after Louis II
+#@ died at Mohacs on 1526.8.29, and Bohemia's own country history already gives
+#@ him as its monarch from 1526.8.30 - vanilla simply never created the union.
+#@ Ends 1618.5.22 so that the Defenestration of Prague the next day, the
+#@ Thirty Years War bookmark and the Palatinate-Bohemia union of 1619 all still
+#@ play out exactly as vanilla intends.
+union = {
+	first = HAB
+	second = BOH
+	start_date = 1526.8.30
+	end_date = 1618.5.22
+}
+
+#@ new. Habsburg-Hungary. Ferdinand I was elected King of Hungary in the same
+#@ succession. End date carried over unchanged from the Bohemia-Hungary union
+#@ this replaces rather than inventing a new one, so Royal Hungary is
+#@ independent again at the 1618 bookmark. Historically the Habsburg crown of
+#@ Hungary ran to 1918, so this end date is the conservative choice, not the
+#@ accurate one - drop it to keep Hungary in union for the rest of the game.
+union = {
+	first = HAB
+	second = HUN
+	start_date = 1526.8.30
 	end_date = 1618.1.1
 }
+
 
 # Bohemia-Palatinate (Friedrich elected as king of Bohemia)
 union = {
