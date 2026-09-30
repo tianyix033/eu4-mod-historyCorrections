@@ -438,6 +438,22 @@ tau_slot_2 = {
 			#@ 1556 opening Bayinnaung has only just taken Ava and has proved nothing
 			#@ yet.
 			add_ruler_personality = legendary_conqueror_personality
+			#@ new. Bayinnaung took Chiang Mai in 1558 and Lan Na became a Toungoo
+			#@ vassal, ruled through a tributary king. This mission already grants the
+			#@ claims on northern_thai_area, so it is the setup step for that war.
+			if = {
+				limit = {
+					exists = LNA
+					LNA = {
+						is_free_or_tributary_trigger = yes
+					}
+				}
+				add_casus_belli = {
+					target = LNA
+					type = cb_vassalize_mission
+					months = 120
+				}
+			}
 			if = {
 				limit = {
 					NOT = { any_country = { has_country_flag = is_burma } }
@@ -495,6 +511,23 @@ tau_slot_2 = {
 				}
 				add_casus_belli = {
 					target = AYU
+					type = cb_vassalize_mission
+					months = 120
+				}
+			}
+			#@ new. Same mission gates tau_conquer_lxa as well as tau_conquer_siam.
+			#@ Bayinnaung campaigned against Lan Xang from 1565 and took Vientiane;
+			#@ Setthathirath kept resisting, but Lan Xang was subjugated on and off
+			#@ for the rest of the reign.
+			if = {
+				limit = {
+					exists = LXA
+					LXA = {
+						is_free_or_tributary_trigger = yes
+					}
+				}
+				add_casus_belli = {
+					target = LXA
 					type = cb_vassalize_mission
 					months = 120
 				}
