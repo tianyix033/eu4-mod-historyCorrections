@@ -17,4 +17,5 @@
 	workshop = yes
 	marketplace = yes
 	shipyard = yes
+	courthouse = yes
 }

@@ -16,4 +16,5 @@
 	workshop = yes
 	barracks = yes
 	shipyard = yes
+	courthouse = yes
 }

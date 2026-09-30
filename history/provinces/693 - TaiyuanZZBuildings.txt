@@ -15,4 +15,5 @@
 1555.1.1 = {
 	temple = yes
 	workshop = yes
+	courthouse = yes
 }

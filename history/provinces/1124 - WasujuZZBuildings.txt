@@ -14,4 +14,5 @@
 
 1555.1.1 = {
 	barracks = yes
+	courthouse = yes
 }

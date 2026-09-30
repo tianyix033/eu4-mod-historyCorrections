@@ -16,4 +16,5 @@
 	temple = yes
 	workshop = yes
 	marketplace = yes
+	courthouse = yes
 }

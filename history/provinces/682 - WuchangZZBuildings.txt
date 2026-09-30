@@ -16,4 +16,5 @@
 	temple = yes
 	workshop = yes
 	barracks = yes
+	courthouse = yes
 }

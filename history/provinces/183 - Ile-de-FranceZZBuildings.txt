@@ -17,4 +17,5 @@
 	workshop = yes
 	barracks = yes
 	marketplace = yes
+	courthouse = yes
 }
