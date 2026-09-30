@@ -1,0 +1,16 @@
+# HistoryCorrections - Bayinnaung's conquest of Ava, 22 January 1555
+#
+# Vanilla flips only the CONTROLLER on this date and leaves ownership with SST
+# until 1563.4.1, where every Shan province transfers in one lump at the war's
+# end - nine years of conquest compressed into a single peace deal.
+#
+# At a 1556 start that left Toungoo occupying a kingdom the game still counted
+# as Shan. Because STARTING_ARMY_SIZE_AT_WAR = 1.0 gives both sides their full
+# force limit, and force limit tracks development, it handed the Shan a 22k
+# stack against Toungoo's 14k - a fight Toungoo's AI would never accept.
+#
+# The TAU core is already added at 1554.1.1 in vanilla, so only ownership moves.
+
+1555.1.22 = {
+	owner = TAU
+}
