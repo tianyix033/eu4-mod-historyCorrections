@@ -1,0 +1,21 @@
+# HistoryCorrections - Bohemia and Royal Hungary as Habsburg personal unions
+#
+# Vanilla has Austria own this province outright from 1526.8.30 and never
+# creates the union, so at a 1556 start Bohemia and Hungary own nothing at all
+# and the Habsburg monarchy looks like one centralised state.
+#
+# Ferdinand I was elected King of Bohemia and King of Hungary after Louis II
+# died at Mohacs on 1526.8.29. Vanilla already knows this - it moves the
+# Silesian vassals to Austria on 1526.8.30 and gives Bohemia's own country
+# history Ferdinand I as monarch on that exact date - it just never transferred
+# the land or created the union.
+#
+# Dated 1551.7.20. Austria's core goes with the land; the union itself is in
+# history/diplomacy/AustriaHungaryBohemia_alliances.txt.
+
+1551.7.20 = {
+	owner = HUN
+	controller = HUN
+	add_core = HUN
+	remove_core = HAB				#@ Austria's core removed with the transfer
+}
