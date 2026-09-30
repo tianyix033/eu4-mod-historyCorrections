@@ -1,0 +1,26 @@
+# HistoryCorrections - missing heir at the 1556 start
+# RUS - Russia
+#
+# Vanilla's heir chain for Ivan IV jumps from Ivan himself (heir 1530, monarch
+# 1533.12.4) straight to Fedor, born 1557.5.31 - so a 1556 start finds Russia
+# with no heir at all and an unstable succession.
+#
+# Ivan IV's surviving son at that point was Ivan Ivanovich, born 1554.3.28:
+# heir apparent for twenty-five years until his father killed him in 1581, the
+# death that put the feeble Fedor on the throne and ended the Rurikovichi.
+# Vanilla omits him entirely. Dated to his birth, which is after the 1533
+# succession, so nothing consumes him.
+
+1554.3.28 = {
+	heir = {						#@ new. Vanilla's next heir is Fedor, 1557.5.31 - after this start date
+		name = "Ivan"
+		monarch_name = "Ivan V"
+		dynasty = "Rurikovich"
+		birth_date = 1554.3.28
+		death_date = 1581.11.19
+		claim = 95
+		adm = 2
+		dip = 2
+		mil = 3
+	}
+}

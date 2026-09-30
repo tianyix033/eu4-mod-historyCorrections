@@ -1,0 +1,27 @@
+# HistoryCorrections - missing heir at the 1556 start
+# SPA - Spain
+#
+# Vanilla's heir Felipe, defined 1527.5.21, is consumed when he becomes Felipe
+# II on 1556.1.16, and no replacement is ever declared. The largest country in
+# the world therefore opens a 1556 start with no heir.
+#
+# Felipe's son Carlos, Prince of Asturias, born 1545.7.8, was heir until his
+# father had him confined in January 1568; he died that July. Contemporaries
+# thought him unfit to rule, hence the stats.
+#
+# Dated 1556.1.17 - one day after the accession - because an heir declared
+# before it would be consumed by that same succession.
+
+1556.1.17 = {
+	heir = {						#@ new. Vanilla declares no heir at all after Felipe II's accession
+		name = "Carlos"
+		monarch_name = "Carlos II"
+		dynasty = "von Habsburg"
+		birth_date = 1545.7.8
+		death_date = 1568.7.24
+		claim = 95
+		adm = 1
+		dip = 1
+		mil = 1
+	}
+}
