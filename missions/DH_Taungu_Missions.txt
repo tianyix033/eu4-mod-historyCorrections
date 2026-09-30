@@ -477,6 +477,28 @@ tau_slot_2 = {
 				name = "million_rice_fields"
 				duration = 7300
 			}
+			#@ new. The Toungoo tree granted no casus belli at all, which makes it the
+			#@ odd one out in Indochina: the Siamese tree has 6 vassalisation CBs, Khmer
+			#@ and Vietnamese 4 each, Lan Xang 3. And Toungoo is the one power that
+			#@ actually did it - Bayinnaung took Lan Na in 1558 and reduced Ayutthaya to
+			#@ a vassal in 1564, again in 1569.
+			#@ Granted here rather than on tau_conquer_siam, which only fires once you
+			#@ already hold Siam. This mission is the one that hands out the claims
+			#@ tau_conquer_siam then requires, so it is the setup step.
+			#@ Guard copied from MND_Siamese_Missions.txt's own idiom.
+			if = {
+				limit = {
+					exists = AYU
+					AYU = {
+						is_free_or_tributary_trigger = yes
+					}
+				}
+				add_casus_belli = {
+					target = AYU
+					type = cb_vassalize_mission
+					months = 120
+				}
+			}
 			champasak_area = {
 				limit = {
 					NOT = { is_permanent_claim = ROOT	}
