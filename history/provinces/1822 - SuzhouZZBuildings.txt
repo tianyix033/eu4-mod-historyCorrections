@@ -1,0 +1,20 @@
+# HistoryCorrections - 1556 building sweep
+#
+# Vanilla ships exactly one building in all of province history, so every
+# late start opens with a world of bare provinces. Placed by threshold:
+#   temple      base_tax >= 6          workshop  base_production >= 6
+#   barracks    base_manpower >= 6     marketplace  centre of trade >= 2
+#   shipyard    production >= 6 and coastal
+#   courthouse  state development >= 40, in that state's best province
+#
+# Dated 1555.1.1 so a 1444 start never sees them - history is only applied up
+# to the start date - while 1556 and later starts do.
+# Coastal status derived from map/provinces.bmp adjacency against
+# default.map sea_starts; nothing in the text files records it.
+
+1555.1.1 = {
+	temple = yes
+	workshop = yes
+	barracks = yes
+	shipyard = yes
+}
