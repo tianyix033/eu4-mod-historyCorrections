@@ -438,22 +438,10 @@ tau_slot_2 = {
 			#@ 1556 opening Bayinnaung has only just taken Ava and has proved nothing
 			#@ yet.
 			add_ruler_personality = legendary_conqueror_personality
-			#@ new. Bayinnaung took Chiang Mai in 1558 and Lan Na became a Toungoo
-			#@ vassal, ruled through a tributary king. This mission already grants the
-			#@ claims on northern_thai_area, so it is the setup step for that war.
-			if = {
-				limit = {
-					exists = LNA
-					LNA = {
-						is_free_or_tributary_trigger = yes
-					}
-				}
-				add_casus_belli = {
-					target = LNA
-					type = cb_vassalize_mission
-					months = 120
-				}
-			}
+			#@ No Lan Na vassalisation CB. LNA is exactly 5 provinces at 1444, 1556,
+			#@ 1600 and 1700 - it never grows - so subjugating it is worth little, and
+			#@ this mission already grants permanent claims on northern_thai_area
+			#@ below, which is the better tool at that size.
 			if = {
 				limit = {
 					NOT = { any_country = { has_country_flag = is_burma } }
@@ -744,6 +732,21 @@ tau_slot_3 = {
 				name = "tau_elephant_battle"
 				duration = 7300
 			}
+			#@ new. Khmer is 14 provinces at 1556. This mission grants the Cambodia
+			#@ claims, so it is the setup step.
+			if = {
+				limit = {
+					exists = KHM
+					KHM = {
+						is_free_or_tributary_trigger = yes
+					}
+				}
+				add_casus_belli = {
+					target = KHM
+					type = cb_vassalize_mission
+					months = 120
+				}
+			}
 			cambodia_area = {
 				limit = {
 					NOT = { is_permanent_claim = ROOT	}
@@ -824,6 +827,21 @@ tau_slot_4 = {
 			add_country_modifier = {
 				name = "tau_arakan_trade"
 				duration = 7300
+			}
+			#@ new. Bengal is 18-19 provinces at this date. This mission grants the
+			#@ Bengal claims, so it is the setup step.
+			if = {
+				limit = {
+					exists = BNG
+					BNG = {
+						is_free_or_tributary_trigger = yes
+					}
+				}
+				add_casus_belli = {
+					target = BNG
+					type = cb_vassalize_mission
+					months = 120
+				}
 			}
 			tripura_area = {
 				limit = {
