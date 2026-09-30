@@ -13,11 +13,12 @@ preferred_religion = anglican
 historical_idea_groups = {
 	economic_ideas		#@ was administrative_ideas
 	exploration_ideas
-	#trade_ideas		#@ was quality_ideas
-	religious_ideas		#@ was maritime_ideas
-	naval_ideas		#@ was economic_ideas
-	innovativeness_ideas		#@ was expansion_ideas
-	trade_ideas
+	religious_ideas		#@ was quality_ideas
+	naval_ideas		#@ was maritime_ideas
+	innovativeness_ideas		#@ was economic_ideas
+	quality_ideas		#@ was expansion_ideas. Swapped in for trade: naval was the
+						#@ only military group here, which left a late-start Britain with
+						#@ nothing on land.
 	maritime_ideas		#@ was trade_ideas
 	infrastructure_ideas		#@ was naval_ideas
 }
