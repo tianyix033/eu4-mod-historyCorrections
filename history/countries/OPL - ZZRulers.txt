@@ -1,0 +1,22 @@
+# HistoryCorrections - ruler fix for the 1556 start
+# OPL - Opole
+#
+# Vanilla's only monarch entry is dated 1437.1.1 and there is never another, so
+# at a 1556 start Opole is run by Mikolaj I Piast, born 1424 - aged 132.
+#
+# Isabella Jagiellon, daughter of Zygmunt I of Poland and widow of Janos
+# Zapolya, was given Opole-Raciborz in 1552 in exchange for renouncing her
+# son's claim to Hungary. She held it until October 1556, when she gave it up
+# and returned to Transylvania - so in February 1556 she is still the duchess.
+
+1552.1.1 = {
+	monarch = {						#@ was Mikolaj I Piast, b.1424, from 1437.1.1
+		name = "Isabella"
+		dynasty = "Jagiellon"
+		birth_date = 1519.1.18
+		female = yes
+		adm = 3
+		dip = 4
+		mil = 2
+	}
+}

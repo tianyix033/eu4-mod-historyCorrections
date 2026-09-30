@@ -1,0 +1,27 @@
+# HistoryCorrections - ruler fix for the 1556 start
+# BYT - Bayreuth
+#
+# Vanilla's comment calls its 1420.1.1 entry "a dummy so that it knows
+# von Hohenzollern as the native dynasty". It is never replaced, so at a 1556
+# start Bayreuth is led by Friedrich VI, born 1371.9.21 - aged 185.
+#
+# Albrecht II Alcibiades held Brandenburg-Kulmbach, the margraviate seated at
+# Bayreuth and Kulmbach, from 1541. He lost it in the 1553-54 fighting that
+# followed his war on Nuremberg and was outlawed, but he was never formally
+# succeeded: he returned to Germany in 1556 and died at Pforzheim on
+# 1557.1.8, after which Georg Friedrich of Ansbach inherited. So he is the
+# margrave in February 1556.
+#
+# Stats reflect the reputation - a capable and relentless field commander, a
+# ruinous administrator and diplomat.
+
+1541.1.1 = {
+	monarch = {						#@ was Friedrich VI von Hohenzollern, b.1371.9.21, from 1420.1.1
+		name = "Albrecht II"
+		dynasty = "von Hohenzollern"
+		birth_date = 1522.3.28
+		adm = 2
+		dip = 1
+		mil = 5
+	}
+}

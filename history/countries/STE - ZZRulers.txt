@@ -1,0 +1,21 @@
+# HistoryCorrections - ruler fix for the 1556 start
+# STE - Stettin
+#
+# Vanilla stops after Ota III Gryf, monarch from 1451.9.30, born 1444.5.29 -
+# aged 112 at a 1556 start. The file even says "There are plenty more".
+#
+# Barnim XI Gryf ruled Pomerania-Stettin from the 1532 partition with his
+# nephew until he resigned in 1569; he had been co-duke of all Pomerania since
+# 1523. He is the duke who took Pomerania Lutheran in 1534, which is what
+# vanilla's own 1534.1.1 religion entry in this file is recording.
+
+1523.1.1 = {
+	monarch = {						#@ was Ota III Gryf, b.1444.5.29, from 1451.9.30
+		name = "Barnim XI"
+		dynasty = "Gryf"
+		birth_date = 1501.12.2
+		adm = 3
+		dip = 3
+		mil = 2
+	}
+}
