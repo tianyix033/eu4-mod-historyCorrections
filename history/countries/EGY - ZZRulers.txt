@@ -1,0 +1,26 @@
+# HistoryCorrections - ruler for the Egyptian eyalet
+# EGY - Egypt
+#
+# EGY's vanilla history file has a header and NOT ONE dated entry, so the moment
+# the tag owns a province it starts with no ruler - the same "No Ruler" defect
+# the Netherlands has. Since the 1556 start releases Egypt as an Ottoman eyalet,
+# it needs a governor.
+#
+# Ottoman Egypt was run by an appointed beylerbey, not a dynasty. The holder at
+# February 1556 was Dukakinzade Mehmed Pasha, governor 1554-1556, of the
+# Albanian Dukagjini house; his successor Iskender Pasha took over later in 1556
+# but no source gives the month, so the incumbent is the safer call for a
+# February start date.
+#
+# No birth_date on purpose - none is recorded, and EU4 generates a plausible age
+# rather than us inventing one.
+
+1554.1.1 = {
+	monarch = {						#@ new. Vanilla EGY defines no ruler at any date
+		name = "Mehmed Pasa"
+		dynasty = "Dukakinzade"
+		adm = 3
+		dip = 2
+		mil = 2
+	}
+}
