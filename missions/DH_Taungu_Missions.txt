@@ -431,6 +431,13 @@ tau_slot_2 = {
 		}
 		effect = {
 			set_government_rank = 3
+			#@ new. The ruler who takes all seven Burmese areas has earned the title,
+			#@ and this is the mission that then hands him permanent claims on
+			#@ northern_thai_area - so the personality is spent on the invasion of
+			#@ Siam rather than wasted. Deliberately NOT granted at the start: at a
+			#@ 1556 opening Bayinnaung has only just taken Ava and has proved nothing
+			#@ yet.
+			add_ruler_personality = legendary_conqueror_personality
 			if = {
 				limit = {
 					NOT = { any_country = { has_country_flag = is_burma } }
