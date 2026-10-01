@@ -131,6 +131,152 @@ on_startup = {
 			}
 		}
 	}
+
+	# Monuments that were materially built up between 1444 and 1556 ---------
+	#
+	# These eleven already stand at tier 1; +1 takes them to 2. Each one is here
+	# because of documented construction inside the window, not because its owner
+	# is large - which matters, since the owner can change. Capped at tier 2, so
+	# vanilla's invariant that nothing starts at tier 3 still holds.
+	#
+	# Rejected from the same size-based sweep, recorded so they are not revisited:
+	#   chichen_itza, machu_picchu, qhapaq_nam, tzintzuntzan - these would have
+	#       upgraded only because Spain is large, when the conquest that handed
+	#       them to Spain is precisely what ruined them
+	#   divrigi_hospital_mosque - untouched since 1228
+	#   grand_canal_1 to _4 and dujiangyan - the big Ming canal restoration was
+	#       1411-15, just before the window, and four segments is a large boost
+	#   citadel_of_aleppo - rebuilt after Timur, also pre-window
+	#   etchimiadzin_cathedral - the Catholicosate returned in 1441, pre-window
+	#   krakow_cloth_hall - it BURNED DOWN in 1555 and was rebuilt 1556-59, so on
+	#       our start date it is a shell. Left at tier 1 rather than downgraded.
+	if = {
+		limit = {
+			is_year = 1556
+			has_dlc = "Leviathan"
+		}
+		if = {
+			limit = { owns = 295 }
+			# Moscow Kremlin. Its present brick walls and towers were built
+			# 1485-1495 by Italian architects under Ivan III, with the Dormition
+			# Cathedral 1475-79, the Faceted Chamber 1487, the Archangel
+			# Cathedral 1505-08 and the Bell Tower 1508. The clearest case here.
+			295 = {
+				if = {
+					limit = { NOT = { has_great_project = { type = kremlin tier = 2 } } }
+					add_great_project_tier = { type = kremlin tier = 1 }
+				}
+			}
+		}
+		if = {
+			limit = { owns = 698 }
+			# Great Wall. The brick wall that survives is largely 15th-16th
+			# century, extended hard under Jiajing against Altan Khan - which is
+			# exactly our window and our reigning emperor.
+			698 = {
+				if = {
+					limit = { NOT = { has_great_project = { type = the_great_wall_of_china tier = 2 } } }
+					add_great_project_tier = { type = the_great_wall_of_china tier = 1 }
+				}
+			}
+		}
+		if = {
+			limit = { owns = 541 }
+			# Vijayanagara. At its architectural peak under Krishnadevaraya
+			# 1509-29 - the Krishna temple, Vittala's eastern gopuram and ranga
+			# mandapa, both 1510. Not sacked until 1565, nine years after we start.
+			541 = {
+				if = {
+					limit = { NOT = { has_great_project = { type = hampi tier = 2 } } }
+					add_great_project_tier = { type = hampi tier = 1 }
+				}
+			}
+		}
+		if = {
+			limit = { owns = 4703 }
+			# Rila. Destroyed in the mid-15th century and rebuilt at its end,
+			# when St Ivan's relics were moved back in.
+			4703 = {
+				if = {
+					limit = { NOT = { has_great_project = { type = rila_monasteries tier = 2 } } }
+					add_great_project_tier = { type = rila_monasteries tier = 1 }
+				}
+			}
+		}
+		if = {
+			limit = { owns = 223 }
+			# Alhambra. Charles V began his palace inside it in 1527.
+			223 = {
+				if = {
+					limit = { NOT = { has_great_project = { type = alhambra tier = 2 } } }
+					add_great_project_tier = { type = alhambra tier = 1 }
+				}
+			}
+		}
+		if = {
+			limit = { owns = 104 }
+			# Milan Cathedral. Under construction throughout; the tiburio was
+			# closed in 1500.
+			104 = {
+				if = {
+					limit = { NOT = { has_great_project = { type = duomo_milano tier = 2 } } }
+					add_great_project_tier = { type = duomo_milano tier = 1 }
+				}
+			}
+		}
+		if = {
+			limit = { owns = 1816 }
+			# Forbidden City. The three main halls burned in 1421 and were
+			# rebuilt, with further heavy work under Jiajing.
+			1816 = {
+				if = {
+					limit = { NOT = { has_great_project = { type = forbidden_city tier = 2 } } }
+					add_great_project_tier = { type = forbidden_city tier = 1 }
+				}
+			}
+		}
+		if = {
+			limit = { owns = 2140 }
+			# Temple of Confucius, Qufu. Burned in 1499 and rebuilt by 1504.
+			2140 = {
+				if = {
+					limit = { NOT = { has_great_project = { type = temple_of_confucius tier = 2 } } }
+					add_great_project_tier = { type = temple_of_confucius tier = 1 }
+				}
+			}
+		}
+		if = {
+			limit = { owns = 214 }
+			# Aljaferia. Rebuilt for the Catholic Monarchs 1488-92.
+			214 = {
+				if = {
+					limit = { NOT = { has_great_project = { type = aljaferia_palace tier = 2 } } }
+					add_great_project_tier = { type = aljaferia_palace tier = 1 }
+				}
+			}
+		}
+		if = {
+			limit = { owns = 361 }
+			# Al-Azhar. Minarets and expansions under Qaytbay and al-Ghuri,
+			# 1468-1516.
+			361 = {
+				if = {
+					limit = { NOT = { has_great_project = { type = al_azhar_university tier = 2 } } }
+					add_great_project_tier = { type = al_azhar_university tier = 1 }
+				}
+			}
+		}
+		if = {
+			limit = { owns = 236 }
+			# Tower of London. Henry VIII's refit of 1532-33.
+			236 = {
+				if = {
+					limit = { NOT = { has_great_project = { type = tower_of_london tier = 2 } } }
+					add_great_project_tier = { type = tower_of_london tier = 1 }
+				}
+			}
+		}
+	}
 }
 
 # A country annexed now may be released again later, at which point it should be
