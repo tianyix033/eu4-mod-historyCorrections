@@ -277,50 +277,256 @@ on_startup = {
 			}
 		}
 	}
-	# Age of Reformation - accumulated splendor and the unreachable objectives ---
+	# Age of Reformation - accumulated splendor and the objectives -------------
 	#
 	# Splendor income: base_values gives monthly_splendor = 1 to EVERY country,
-	# num_objectives_fullfilled adds +2/month per objective fulfilled, lucky
+	# num_objectives_fullfilled adds +2/month PER OBJECTIVE FULFILLED, lucky
 	# nations get +1, and an ability costs 800 (SPLENDOR_ABILITY_COST).
 	#
 	# Splendor CARRIES across ages but abilities do NOT - on_new_age runs
 	# remove_all_age_timed_modifiers and never touches splendor - so a 1444
-	# campaign reaching 1556 has earned 1344 months of base income plus thousands
-	# more from objectives, and spent nearly all of it re-buying abilities after
-	# each age transition. The accumulated total is therefore the WRONG figure; a
-	# residual is the right one.
+	# campaign reaching 1556 has earned its whole income and spent nearly all of
+	# it re-buying abilities after each age transition. We therefore grant income
+	# for THIS AGE ONLY and treat everything earlier as already spent.
 	#
-	# 432 = 36 years x 12 months x 1/month base. Taking the age as having begun in
-	# 1520: the file says start = 1530, but a 1444 campaign usually reaches it
-	# earlier, so 1520 is the middle ground. It reads as "base income over the
-	# current age, with everything older already spent on abilities that have since
-	# expired". Just over half an ability, so the mechanic still bites.
+	# The age is taken to have begun 1520.1.1: the file says start = 1530, but a
+	# 1444 campaign usually reaches it earlier, so 1520 is the middle ground.
+	# That is 433 months to 1556.2.14.
 	#
-	# Of the 7 Reformation objectives, 5 are pure triggers - christian_convert,
-	# humanism_religious, colonial_empire, asian_trade, unify_culture - and
-	# evaluate correctly from the start state, so they need nothing. The other two
-	# read engine-maintained state that is empty at a late start:
+	# Everyone gets the 433 months of base income. On top of that, each of the
+	# seven objectives pays 2/month for as long as the country actually held it,
+	# so the sections below add 2 x months per objective. Five of the seven are
+	# live triggers that the engine will also evaluate at runtime, which is what
+	# keeps the income flowing after the start date; what is granted here is only
+	# the accumulated past that a late start cannot know about.
 	#
-	#   obj_convert_10_provinces  check_variable num_converted_religion >= 10
-	#   obj_force_converted       has_country_flag = force_converted
-	#
-	# The variable counts MISSIONARY conversions, so the Reformation spreading
-	# through England, Sweden and Denmark does not qualify. Granted to the three
-	# with unambiguous large-scale conversion by 1556: Spain for Granada and the
-	# Americas, Portugal for Goa and Brazil, Russia for the Kazan khanate taken in
-	# 1552. Each one is worth +2/month for the rest of the age, which matters more
-	# than the lump sum.
-	#
-	# obj_force_converted is deliberately left UNSET. Forcing a whole nation to
-	# change religion by treaty has essentially no 1444-1556 analogue, and the
-	# nearest thing - the 1555 Peace of Augsburg - established the opposite
-	# principle, that each prince settled his own lands.
+	# obj_force_converted is the one objective granted to NOBODY. Forcing a whole
+	# nation to change religion by treaty has essentially no 1444-1556 analogue,
+	# and the nearest thing - the 1555 Peace of Augsburg - established the
+	# opposite principle, that each prince settled his own lands.
 	if = {
 		limit = {
 			is_year = 1556
 			has_dlc = "Mandate of Heaven"
 		}
-		add_splendor = 432
+		add_splendor = 433
+
+		# --- obj_christian_convert
+		# Reformed faiths. Dates are each country's own religion entry in
+		# history/countries, so these are measured, not estimated. 'pre-age' means it
+		# had already turned before 1520 and gets the whole age.
+		# 373 months (31.1 years), 1 country
+		if = {
+			limit = { tag = PRU }
+			add_splendor = 746
+		}
+		# 349 months (29.1 years), 1 country
+		if = {
+			limit = { tag = HES }
+			add_splendor = 698
+		}
+		# 337 months (28.1 years), 2 countries
+		if = {
+			limit = {
+				OR = {
+					tag = SWI tag = TTL
+				}
+			}
+			add_splendor = 674
+		}
+		# 332 months (27.7 years), 1 country
+		if = {
+			limit = { tag = EFR }
+			add_splendor = 664
+		}
+		# 325 months (27.1 years), 8 countries
+		if = {
+			limit = {
+				OR = {
+					tag = ANH tag = BRU tag = HAM tag = HSA tag = LUN tag = MLH tag = OLD tag = VER
+				}
+			}
+			add_splendor = 650
+		}
+		# 313 months (26.1 years), 2 countries
+		if = {
+			limit = {
+				OR = {
+					tag = SWE tag = ULM
+				}
+			}
+			add_splendor = 626
+		}
+		# 301 months (25.1 years), 2 countries
+		if = {
+			limit = {
+				OR = {
+					tag = MKL tag = SAX
+				}
+			}
+			add_splendor = 602
+		}
+		# 289 months (24.1 years), 1 country
+		if = {
+			limit = { tag = BRE }
+			add_splendor = 578
+		}
+		# 277 months (23.1 years), 2 countries
+		if = {
+			limit = {
+				OR = {
+					tag = ANS tag = BYT
+				}
+			}
+			add_splendor = 554
+		}
+		# 265 months (22.1 years), 3 countries
+		if = {
+			limit = {
+				OR = {
+					tag = STE tag = WOL tag = WUR
+				}
+			}
+			add_splendor = 530
+		}
+		# 241 months (20.1 years), 1 country
+		if = {
+			limit = { tag = DAN }
+			add_splendor = 482
+		}
+		# 205 months (17.1 years), 1 country
+		if = {
+			limit = { tag = BRA }
+			add_splendor = 410
+		}
+		# 160 months (13.3 years), 1 country
+		if = {
+			limit = { tag = REG }
+			add_splendor = 320
+		}
+		# 57 months (4.8 years), 1 country
+		if = {
+			limit = { tag = MAG }
+			add_splendor = 114
+		}
+
+		# --- obj_humanism_religious
+		# humanist_ideas or religious_ideas in historical_idea_groups. Slot 1 or 2
+		# counts as completed for the whole age; slot 3 as completed by 1540. Slot 4
+		# and later get nothing - a fourth group is not finished by 1556.
+		# NOT filtered by government or tech group, by your ruling, so the native
+		# tribes our own idea sweep gave religious_ideas to are included.
+		# 433 months (36.1 years), 196 countries
+		if = {
+			limit = {
+				OR = {
+					tag = ABE tag = ABI tag = ACO tag = AGG tag = AGQ tag = AJU tag = ALS tag = ALT tag = ANH
+					tag = ANL tag = ANS tag = ANU tag = ANZ tag = APA tag = ARD tag = ARN tag = ARP tag = ARW
+					tag = ASI tag = ATA tag = ATT tag = ATW tag = AUV tag = BAH tag = BLA tag = BPI tag = BRE
+					tag = BST tag = BTI tag = BUK tag = BYT tag = CAD tag = CAO tag = CAQ tag = CAY tag = CCA
+					tag = CCM tag = CHE tag = CHG tag = CHI tag = CHO tag = CHU tag = CHV tag = CHY tag = CIA
+					tag = CLG tag = CNK tag = COF tag = COM tag = COO tag = COW tag = DAW tag = DNG tag = DTI
+					tag = DTT tag = EFR tag = ERI tag = ETH tag = ETO tag = FER tag = FOX tag = FRN tag = GHR
+					tag = GRJ tag = GRK tag = GUA tag = HDA tag = HED tag = HNI tag = HOD tag = HWK tag = ICH
+					tag = INN tag = ISL tag = ITZ tag = JML tag = JOA tag = JPR tag = KAC tag = KAM tag = KAS
+					tag = KER tag = KGR tag = KHA tag = KIO tag = KJH tag = KLH tag = KMC tag = KMN tag = KOL
+					tag = KRY tag = KSH tag = KSI tag = KSK tag = KSP tag = KTU tag = LAK tag = LEN tag = LIP
+					tag = LIT tag = LIV tag = LWA tag = MAG tag = MAH tag = MAI tag = MAN tag = MBL tag = MFL
+					tag = MIK tag = MIS tag = MLB tag = MLS tag = MMI tag = MOH tag = MON tag = MPC tag = MRE
+					tag = MSC tag = MSG tag = MSY tag = MUN tag = MZB tag = NAH tag = NAJ tag = NAK tag = NAV
+					tag = NAX tag = NEH tag = NJR tag = NOG tag = NTC tag = NTZ tag = NVK tag = OEO tag = OHK
+					tag = OIR tag = OJI tag = ONE tag = ONO tag = ORI tag = OSA tag = OSH tag = OTT tag = PAP
+					tag = PAR tag = PAW tag = PCH tag = PEN tag = PEO tag = PEQ tag = PHA tag = PIM tag = POT
+					tag = POW tag = PRD tag = PTG tag = PTT tag = QUI tag = RAS tag = RTT tag = RUS tag = SAL
+					tag = SAT tag = SBP tag = SEN tag = SHM tag = SHO tag = SIO tag = SLZ tag = SOL tag = SPA
+					tag = SRM tag = STA tag = SUS tag = TAB tag = TAH tag = TIO tag = TNT tag = TPA tag = TPQ
+					tag = TPR tag = TRI tag = TSC tag = UTS tag = VER tag = VIJ tag = WAM tag = WAR tag = WCR
+					tag = WCY tag = WEN tag = WIC tag = YAQ tag = YAS tag = YKT tag = ZNI
+				}
+			}
+			add_splendor = 866
+		}
+		# 193 months (16.1 years), 55 countries
+		if = {
+			limit = {
+				OR = {
+					tag = AAC tag = ABB tag = BAD tag = BAM tag = BRR tag = BRU tag = CHD tag = DAM tag = EJZ
+					tag = ENA tag = ENG tag = FZA tag = GDW tag = GHD tag = GOS tag = HAM tag = HDR tag = JJI
+					tag = KAF tag = KBA tag = KLE tag = KRC tag = LAU tag = LUN tag = MED tag = MEM tag = MHR
+					tag = MHX tag = MLW tag = MOR tag = MYR tag = NGP tag = NHX tag = NSA tag = NUB tag = NUM
+					tag = OLD tag = ORL tag = ORM tag = PAL tag = PER tag = PSS tag = REG tag = ROT tag = RVA
+					tag = SND tag = SON tag = TGT tag = TRP tag = TUN tag = TUR tag = WBG tag = WLY tag = WUR
+					tag = ZAN
+				}
+			}
+			add_splendor = 386
+		}
+
+		# --- obj_convert_10_provinces
+		# 10+ missionary conversions. The Reformation spreading does NOT count, which
+		# rules out most of Europe. Spain had Granada and then the Americas, so the
+		# whole age; Portugal reached ten across Goa, Ceylon and Brazil by about 1540;
+		# Russia on the fall of Kazan, 1552.10.2.
+		# 433 months (36.1 years), 1 country
+		if = {
+			limit = { tag = SPA }
+			add_splendor = 866
+		}
+		# 193 months (16.1 years), 1 country
+		if = {
+			limit = { tag = POR }
+			add_splendor = 386
+		}
+		# 40 months (3.3 years), 1 country
+		if = {
+			limit = { tag = RUS }
+			add_splendor = 80
+		}
+
+		# --- obj_colonial_empire
+		# 5+ colonial subjects. Spain alone qualifies, with exactly five colonial
+		# regions holding 5+ provinces: Mexico, Peru, Colombia, La Plata and the
+		# Caribbean. Dated 1540, by which point Peru and La Plata had been taken in.
+		# 193 months (16.1 years), 1 country
+		if = {
+			limit = { tag = SPA }
+			add_splendor = 386
+		}
+
+		# --- obj_asian_trade
+		# The trading bonus in spices, cloves, chinaware or silk. Ming (8 chinaware,
+		# 6 silk) and Persia (7 silk, 6 spices) dominate their own home nodes.
+		# Portugal is deliberately excluded: its spice monopoly is a historical fact
+		# but trading_bonus is about node dominance, which it would not hold at start.
+		# 433 months (36.1 years), 2 countries
+		if = {
+			limit = {
+				OR = {
+					tag = MNG tag = PER
+				}
+			}
+			add_splendor = 866
+		}
+
+		# --- obj_unify_culture
+		# has_unified_culture_group and not a subject. Computed by checking every
+		# province of each country's culture group against its owner at the start
+		# date. Only four qualify: Ming holds all 87 east_asian provinces, Korea all
+		# 18 korean_g. Mismak and Mapuche qualify trivially - their culture group is a
+		# single province - but the engine grants it to them anyway at runtime.
+		# 433 months (36.1 years), 4 countries
+		if = {
+			limit = {
+				OR = {
+					tag = KOR tag = MIS tag = MNG tag = MPC
+				}
+			}
+			add_splendor = 866
+		}
+		# --- obj_convert_10_provinces and obj_force_converted read engine state
+		# that is empty at a late start, so the objective itself has to be marked,
+		# not just paid for. num_converted_religion is a country variable;
+		# force_converted is a country flag and is deliberately left unset.
 		if = {
 			limit = {
 				OR = {
@@ -332,7 +538,6 @@ on_startup = {
 			set_variable = { which = num_converted_religion value = 10 }
 		}
 	}
-
 }
 
 # A country annexed now may be released again later, at which point it should be
