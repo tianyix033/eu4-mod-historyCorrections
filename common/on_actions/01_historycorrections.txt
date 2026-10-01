@@ -18,6 +18,119 @@ on_startup = {
 	add_army_tradition = 25
 	add_navy_tradition = 25
 	set_country_flag = hc_claimed_starting_tradition
+
+	# Monuments that already stood on 1556.2.14 ---------------------------
+	#
+	# A monument's tier is fixed by starting_tier in common/great_projects/, so
+	# every start date opens with the same tiers and a 1556 world looks exactly
+	# like 1444. Tier 0 is how Paradox says "unbuilt or in ruins" - Versailles,
+	# the Brandenburg Gate and the White House all sit at 0 - so tier 0 is usually
+	# CORRECT and must not be swept. These eight are the ones that demonstrably
+	# stood by February 1556 and are wrongly still ruins.
+	#
+	# Deliberately NOT touched:
+	#   the 85 monuments already at tier 1 or 2 - no blanket upkeep sweep
+	#   buda_castle, which is really the Bibliotheca Corviniana, dispersed when
+	#       the Ottomans took Buda in 1526
+	#   cartagena_de_indias, a 17th-century fort system built after Drake's 1586
+	#       raid, and fuerte_del_morro, a mere tower until the 1595 bastion fort
+	#   the ancient ruins - Petra, the Parthenon, Stonehenge, Cheops, Tikal,
+	#       Borobudur - which EU4 means you to restore yourself
+	#   near-misses finished just after the date: St Basil's (1561), the Kazan
+	#       kremlin (from 1556), St Peter's (1626), Kanbawzathadi Palace
+	#
+	# Guarded three ways: is_year so a 1444 start never sees it, owns so each one
+	# fires exactly once and the owner is the country scope add_great_project_tier
+	# needs, and has_great_project so re-running cannot stack tiers.
+	if = {
+		limit = {
+			is_year = 1556
+			has_dlc = "Leviathan"
+		}
+		if = {
+			limit = { owns = 227 }
+			# Belem Tower, Lisbon. Built 1514-1519.
+			227 = {
+				if = {
+					limit = { NOT = { has_great_project = { type = belem_tower tier = 1 } } }
+					add_great_project_tier = { type = belem_tower tier = 1 }
+				}
+			}
+		}
+		if = {
+			limit = { owns = 514 }
+			# Mehrangarh Fort, Jodhpur. Founded 1459 by Rao Jodha.
+			514 = {
+				if = {
+					limit = { NOT = { has_great_project = { type = mehrangarh_fort tier = 1 } } }
+					add_great_project_tier = { type = mehrangarh_fort tier = 1 }
+				}
+			}
+		}
+		if = {
+			limit = { owns = 2310 }
+			# Spiral Minaret of Samarra. Built 848-852 and still standing.
+			2310 = {
+				if = {
+					limit = { NOT = { has_great_project = { type = spiral_minaret_samarra tier = 1 } } }
+					add_great_project_tier = { type = spiral_minaret_samarra tier = 1 }
+				}
+			}
+		}
+		if = {
+			limit = { owns = 795 }
+			# Cerro Rico del Potosi. Silver struck 1545; by 1556 one of the
+			# largest cities in the Americas.
+			795 = {
+				if = {
+					limit = { NOT = { has_great_project = { type = potosi tier = 1 } } }
+					add_great_project_tier = { type = potosi tier = 1 }
+				}
+			}
+		}
+		if = {
+			limit = { owns = 856 }
+			# Zacatecas. Founded 1546 on the San Bernabe lode, 34 mines
+			# working by 1550.
+			856 = {
+				if = {
+					limit = { NOT = { has_great_project = { type = zacatecas_mine_city tier = 1 } } }
+					add_great_project_tier = { type = zacatecas_mine_city tier = 1 }
+				}
+			}
+		}
+		if = {
+			limit = { owns = 756 }
+			# Salvador da Bahia. Founded 1549 as the capital of Portuguese
+			# Brazil.
+			756 = {
+				if = {
+					limit = { NOT = { has_great_project = { type = salvador_da_bahia tier = 1 } } }
+					add_great_project_tier = { type = salvador_da_bahia tier = 1 }
+				}
+			}
+		}
+		if = {
+			limit = { owns = 4144 }
+			# Heddal Stave Church. Early 13th century.
+			4144 = {
+				if = {
+					limit = { NOT = { has_great_project = { type = heddal_stave_church tier = 1 } } }
+					add_great_project_tier = { type = heddal_stave_church tier = 1 }
+				}
+			}
+		}
+		if = {
+			limit = { owns = 1170 }
+			# M'banza-Kongo, capital of Kongo; its cathedral went up 1526-1534.
+			1170 = {
+				if = {
+					limit = { NOT = { has_great_project = { type = mbanza_kongo tier = 1 } } }
+					add_great_project_tier = { type = mbanza_kongo tier = 1 }
+				}
+			}
+		}
+	}
 }
 
 # A country annexed now may be released again later, at which point it should be
