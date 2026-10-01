@@ -1,0 +1,22 @@
+# HistoryCorrections - privilege stranded on a predecessor tag
+# RUS - Russia
+#
+# estate_nobles_mestnichestvo is set on the MOS tag, dated 1389.5.19. MOS owns no
+# provinces at 1556 - RUS does - and history is read per tag, so Russia never
+# receives it. RUS's own file contains ONLY the matching
+# remove_estate_privilege at 1682.1.1, which at a 1556 start removes something
+# the country never had.
+#
+# Mestnichestvo - appointment and precedence by lineage rather than merit - ran
+# from the 15th century until Fyodor III abolished it in 1682, so Ivan IV should
+# certainly have it. Dated 1503.3.22, which is the date RUS's own file gives for
+# changed_tag_from = MOS, so the privilege is live for any start from then on and
+# vanilla's 1682 removal finally has something to remove.
+#
+# Deliberately NOT also granting estate_nobles_strong_duchies, MOS's other
+# privilege: Ivan IV was liquidating the appanage principalities by 1556, with
+# only Staritsa surviving to 1569 and the oprichnina following in 1565.
+
+1503.3.22 = {
+	set_estate_privilege = estate_nobles_mestnichestvo		#@ new. Set on MOS, a tag that owns nothing at 1556, so RUS never got it
+}

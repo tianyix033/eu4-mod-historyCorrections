@@ -1,0 +1,22 @@
+# HistoryCorrections - estate privilege no longer true at 1556
+# MNG - Ming
+#
+# Vanilla sets estate_eunuchs_delegate_subject_diplomacy_privilege in the undated
+# header, so it applies at every start date. The Jiajing Emperor, who is on the
+# throne at our start, came in on an anti-eunuch reaction: he purged Zhengde's
+# eunuch establishment on his accession in 1521, and his reign is the low point
+# of eunuch influence in the Ming. Delegated eunuch diplomacy is a Yongle and
+# Zhengde phenomenon, not a Jiajing one.
+#
+# Dated to his accession, so a 1444 start keeps the privilege.
+#
+# PARKED DESIGN NOTE - the eunuchs should be winnable back, not simply deleted.
+# The intent is flavour events in the Age of Absolutism offering the Emperor more
+# eunuch power in exchange for absolutism. The logic is sound: eunuch power
+# cannot be inherited, which makes eunuchs the throne's natural allies and a
+# usable weapon against the Confucian scholar-officials - the church estate in
+# EU4's terms. Not built yet; see planning/starting_date_research.
+
+1521.5.27 = {
+	remove_estate_privilege = estate_eunuchs_delegate_subject_diplomacy_privilege	#@ vanilla sets this in the header, for all start dates
+}

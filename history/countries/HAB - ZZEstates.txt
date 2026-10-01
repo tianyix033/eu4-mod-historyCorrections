@@ -1,0 +1,19 @@
+# HistoryCorrections - estate privilege no longer true at 1556
+# HAB - Austria
+#
+# Vanilla sets estate_nobles_habsburg_disunity in the undated header, so it
+# applies at every start date and is never withdrawn. It models the split of the
+# Austrian lands between the Albertinian and Leopoldian lines. Maximilian I had
+# reunited them by 1490, when Sigismund ceded Tirol to him, and in February 1556
+# Ferdinand I holds the whole hereditary inheritance.
+#
+# Dated to that cession. A 1444 start still gets the privilege, because header
+# entries apply before any dated one.
+#
+# Note for later: the lands divide again in 1564 on Ferdinand's death, into the
+# Austrian, Tirolean and Inner Austrian lines. If a start date after that is ever
+# added, the privilege should be set again rather than left off.
+
+1490.3.16 = {
+	remove_estate_privilege = estate_nobles_habsburg_disunity		#@ vanilla sets this in the header, for all start dates
+}

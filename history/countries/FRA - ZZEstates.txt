@@ -1,0 +1,17 @@
+# HistoryCorrections - estate privilege no longer true at 1556
+# FRA - France
+#
+# Vanilla grants estate_nobles_french_strong_duchies on 1444.10.1 and never
+# withdraws it, so a 1556 France is still modelled as a crown hemmed in by great
+# appanages. By then every one of them is gone: Burgundy fell in on the crown
+# after Charles the Bold died in 1477, the Bourbon lands were confiscated after
+# the Constable's treason and his death in 1527, and Brittany was formally united
+# by the Edict of Union in 1532.
+#
+# Dated to the Edict of Union, the last of the three, so a 1444 start is
+# untouched. Vanilla uses exactly this pattern for England - it grants
+# estate_nobles_english_villeinage in 1444 and removes it in 1453.
+
+1532.8.13 = {
+	remove_estate_privilege = estate_nobles_french_strong_duchies		#@ vanilla grants this 1444.10.1 and never removes it
+}
