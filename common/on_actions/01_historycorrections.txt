@@ -277,6 +277,62 @@ on_startup = {
 			}
 		}
 	}
+	# Age of Reformation - accumulated splendor and the unreachable objectives ---
+	#
+	# Splendor income: base_values gives monthly_splendor = 1 to EVERY country,
+	# num_objectives_fullfilled adds +2/month per objective fulfilled, lucky
+	# nations get +1, and an ability costs 800 (SPLENDOR_ABILITY_COST).
+	#
+	# Splendor CARRIES across ages but abilities do NOT - on_new_age runs
+	# remove_all_age_timed_modifiers and never touches splendor - so a 1444
+	# campaign reaching 1556 has earned 1344 months of base income plus thousands
+	# more from objectives, and spent nearly all of it re-buying abilities after
+	# each age transition. The accumulated total is therefore the WRONG figure; a
+	# residual is the right one.
+	#
+	# 432 = 36 years x 12 months x 1/month base. Taking the age as having begun in
+	# 1520: the file says start = 1530, but a 1444 campaign usually reaches it
+	# earlier, so 1520 is the middle ground. It reads as "base income over the
+	# current age, with everything older already spent on abilities that have since
+	# expired". Just over half an ability, so the mechanic still bites.
+	#
+	# Of the 7 Reformation objectives, 5 are pure triggers - christian_convert,
+	# humanism_religious, colonial_empire, asian_trade, unify_culture - and
+	# evaluate correctly from the start state, so they need nothing. The other two
+	# read engine-maintained state that is empty at a late start:
+	#
+	#   obj_convert_10_provinces  check_variable num_converted_religion >= 10
+	#   obj_force_converted       has_country_flag = force_converted
+	#
+	# The variable counts MISSIONARY conversions, so the Reformation spreading
+	# through England, Sweden and Denmark does not qualify. Granted to the three
+	# with unambiguous large-scale conversion by 1556: Spain for Granada and the
+	# Americas, Portugal for Goa and Brazil, Russia for the Kazan khanate taken in
+	# 1552. Each one is worth +2/month for the rest of the age, which matters more
+	# than the lump sum.
+	#
+	# obj_force_converted is deliberately left UNSET. Forcing a whole nation to
+	# change religion by treaty has essentially no 1444-1556 analogue, and the
+	# nearest thing - the 1555 Peace of Augsburg - established the opposite
+	# principle, that each prince settled his own lands.
+	if = {
+		limit = {
+			is_year = 1556
+			has_dlc = "Mandate of Heaven"
+		}
+		add_splendor = 432
+		if = {
+			limit = {
+				OR = {
+					tag = SPA
+					tag = POR
+					tag = RUS
+				}
+			}
+			set_variable = { which = num_converted_religion value = 10 }
+		}
+	}
+
 }
 
 # A country annexed now may be released again later, at which point it should be
