@@ -414,8 +414,12 @@ on_startup = {
 		# humanist_ideas or religious_ideas in historical_idea_groups. Slot 1 or 2
 		# counts as completed for the whole age; slot 3 as completed by 1540. Slot 4
 		# and later get nothing - a fourth group is not finished by 1556.
-		# NOT filtered by government or tech group, by your ruling, so the native
-		# tribes our own idea sweep gave religious_ideas to are included.
+		# NOT filtered by government or tech group, by your ruling, so the ~150
+		# native and tribal countries that list religious_ideas first are included.
+		# That ordering is VANILLA's own default for them, not ours: 189 of the 196
+		# qualifying at slot 1-2 are untouched vanilla files, and across this mod's
+		# 111 country overrides humanist/religious moved LATER in 69 and earlier in
+		# only 8, so our sweep lowered this count rather than raising it.
 		# 433 months (36.1 years), 196 countries
 		if = {
 			limit = {
